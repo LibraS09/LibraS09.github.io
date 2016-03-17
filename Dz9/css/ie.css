@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'League Gothic';
+  src:   url('../font/leaguegothic-webfont.eot');
+}
+body {
+  background: url(../img/photo1.jpg) center top no-repeat;
+}
+.bg1 {
+  background:  url(../img/fon.png) 0 846px repeat-x;
+}
+.bg2 {
+  background: url(../img/photo2.jpg) center 2192px no-repeat;
+}
+.nav-li {
+  padding-left: 0;
+  margin-left: 53px;
+}
+.nav-li_2 {
+  margin-left: 0;
+  padding-left: 45px;
+}
+
+@media screen and (max-width: 768px) {
+body {
+  background: url(../img/photo768.jpg) center top no-repeat;
+}
+.bg1 {
+  background:  url(../img/fon.png)  0 798px repeat-x;
+}
+.bg2 {
+  background: url(../img/photo2ie.jpg) center 2144px no-repeat;
+}
+.nav-li {
+  margin-left: 0;
+  margin-right: 7.1%;
+}
+.nav-li_2 {
+  margin-right: 0;
+  padding-left: 6%
+}
+}
+@media screen and (max-width: 480px) {
+body {
+  background: url(../img/photo1.jpg) center top no-repeat;
+  background-size: auto 549px;
+}
+.bg1 {
+  background:  url(../img/fon2.png)  0 549px repeat-x;
+}
+.bg2 {
+  background: url(../img/photo2ie.jpg) center 2836px no-repeat;
+}
+}
+@media screen and (max-width: 320px) {
+body {
+  background: url(../img/photo.jpg) center top no-repeat;
+  background-size: auto 516px;
+}
+.bg1 {
+  background:  url(../img/fon3.png)  0 501px repeat-x;
+}
+.bg2 {
+  background: url(../img/photo2ie.jpg) center 2320px no-repeat;
+}
+}
