@@ -18,6 +18,7 @@ $(document).ready(function(){
     $(".form-text label").hide();
     // console.log("#"+$(this).html());
     $("#"+$(this).html()).delay(300).fadeIn(500);
+    $(this).next().focus();
   });
   $("#button1").click(function(){
     $(".form-text label").fadeIn(500);
