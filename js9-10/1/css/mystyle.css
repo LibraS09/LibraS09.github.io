@@ -1,0 +1,60 @@
+body {
+  overflow: scroll;
+}
+.block-niceCheck {
+  float: left;
+  margin-left: 20px;
+}
+.block-niceCheck p {
+  margin: 0;
+}
+
+/*нестандартные чекбоксы: с помощью jquery*/
+.niceCheck {
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	background: url(../img/checkbox.png);
+	overflow: hidden;
+}
+.niceChecked {
+	background-position: 0 -17px;
+}
+.niceCheck input {
+  /*display: none;*/
+	margin-left: -100px;
+}
+.niceCheckDisabled {
+	background: url(../img/checkbox-disabled.png);
+}
+
+
+/*нестандартные чекбоксы: с помощью css*/
+.checkbox-css input[type=checkbox] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+.checkbox-css label::after {
+  content: " ";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url(../img/checkbox22.png);
+  position: relative;
+  top: 3px;
+  margin-left: 15px;
+}
+.checkbox-css input[type=checkbox]:checked + label:after {
+  background-position: 0 -17px;
+}
+.checkbox-css label:hover:after {
+  background-position: 0 -34px;
+}
+.checkbox-css input[type=checkbox]:checked + label:hover:after {
+  background-position: 0 -51px;
+}
+.clearfix {
+  display: block;
+  content: '';
+  clear: both;
+}

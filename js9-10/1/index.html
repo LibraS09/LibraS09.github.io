@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jCarousel Examples</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" >
+  <link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.selectbox.css">
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css" >
+  <script type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+  </script>
+  <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+  <script type="text/javascript" src="js/jcarousel.basic.js"></script>
+
+  <script type="text/javascript" src="js/scriptcheck.js"></script>
+
+  <script type="text/javascript" src="js/jquery.selectbox-0.6.1.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+<div class="wrapper">
+  <h1>Photo</h1>
+  <div class="jcarousel-wrapper">
+      <div class="jcarousel">
+          <ul>
+              <li><img src="img/img1.jpg" width="600" height="400" alt=""></li>
+              <li><img src="img/img2.jpg" width="600" height="400" alt=""></li>
+              <li><img src="img/img3.jpg" width="600" height="400" alt=""></li>
+              <li><img src="img/img4.jpg" width="600" height="400" alt=""></li>
+              <li><img src="img/img5.jpg" width="600" height="400" alt=""></li>
+              <!-- <li><img src="img/img6.jpg" width="600" height="400" alt=""></li> -->
+          </ul>
+      </div>
+
+      <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+      <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+      <p class="jcarousel-pagination"></p>
+  </div>
+
+    <select>
+      <option>Пункт 1</option>
+      <option>Пункт 2</option>
+      <option>Пункт 3</option>
+      <option>Пункт 4</option>
+      <option>Пункт 5</option>
+      <option>Пункт 6</option>
+    </select>
+
+  <div class="block-niceCheck">
+  <p>нестандартные чекбоксы: с помощью jquery</p>
+  <form>
+  <div><label class="niceCheckLabel" for="ch1">label 1</label>
+    <span class="niceCheck"><input type="checkbox" id="ch1"></span>
+  </div>
+  <div><label class="niceCheckLabel" for="ch2">label 2</label>
+    <span class="niceCheck"><input type="checkbox" id="ch2"></span>
+  </div>
+  <div><label class="niceCheckLabel" for="ch3">label 3</label>
+    <span class="niceCheck"><input type="checkbox" id="ch3" disabled></span>
+  </div>
+  <div><label class="niceCheckLabel" for="ch4">label 4</label>
+    <span class="niceCheck"><input type="checkbox" id="ch4" disabled checked></span>
+  </div>
+  </form>
+  <p>нестандартные чекбоксы: с помощью css</p>
+  <form class="checkbox-css">
+    <div><input type="checkbox" id="check1"><label for="check1">checkbox 1</label></div>
+    <div><input type="checkbox" id="check2"><label for="check2">checkbox 2</label></div>
+    <div><input type="checkbox" id="check3"><label for="check3">checkbox 3</label></div>
+  </form>
+  </div>
+  <div class="clearfix"></div>
+</div> <!-- wrapper -->
+</body>
+</html>
