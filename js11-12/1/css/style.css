@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper-carousel {
+
+  margin: 20px auto;
+  width: 664px;
+  padding: 20px 0;
+}
+.carousel-list {
+  list-style: none;
+  width: 10000px;
+  position: relative;
+}
+.carousel-element {
+  display: block;
+  margin-right: 25px;
+  float: left;
+}
+.carousel-element .img {
+  width: 100px;
+  height: 80px;
+  background-size: cover;
+}
+.carousel-element .img1 {
+  background-image: url(../img/image1.jpg);
+}
+.carousel-element .img2 {
+  background-image: url(../img/image2.jpg);
+}
+.carousel-element .img3 {
+  background-image: url(../img/image3.jpg);
+}
+.carousel-element .img4 {
+  background-image: url(../img/image4.jpg);
+}
+.carousel-element .img5 {
+  background-image: url(../img/image5.jpg);
+}
+.carousel-element p {
+  width: 100px;
+  text-align: center;
+}
+.carousel-hider {
+  width: 475px;
+  overflow: hidden;
+  float: left;
+  border: 4px groove lightgrey;
+}
+.carousel-arrow-left, .carousel-arrow-right {
+  float: left;
+  display: block;
+  border: 4px groove lightgrey;
+  background-color: lightgrey;
+  padding: 5px 0;
+  margin-top: 50px;
+  width: 37px;
+  text-align: center;
+  font-size: 24px;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none
+}
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+.carousel-arrow-left {
+  margin-right: 25px;
+}
+.carousel-arrow-right {
+  margin-left: 25px;
+}
+.clearfix {
+  display: block;
+  content: '';
+  clear: both;
+}

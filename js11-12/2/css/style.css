@@ -1,0 +1,33 @@
+body {
+	background-color: #ccc;
+	margin: 0px;
+	padding: 0px;
+	}
+
+hr {
+	margin-left: -15px;
+	}
+
+ul {
+	padding-left: 20px;
+	}
+
+p {
+	margin-bottom: 20px;
+    margin-top: 20px
+	}
+
+.all {
+	background-color: #fff;
+	box-shadow: 0 0 10px #808080;
+	width: 410px;
+	margin: 2px auto 30px;
+	padding: 20px 50px 50px;
+	font-family: serif;
+	font-size: 18px;
+	line-height: 26px;
+	}
+
+.fio {
+	text-align: center;
+	}
