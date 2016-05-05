@@ -17,6 +17,7 @@ function search(v) {
 url= "http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q="+v+"&rsz=8&callback=?";
 $.getJSON(url, function (json){
     console.log (v);
+    console.log (json);
   var results = json.responseData.results;
     console.log (results);
   var ol = document.createElement("ol");
