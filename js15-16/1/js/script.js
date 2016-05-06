@@ -14,17 +14,16 @@ $("#form :input").keypress(function(e) {
 });
 
 function search(v) {
-url= "http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q="+v+"&rsz=8&callback=?";
-$.getJSON(url, function (json){
-    console.log (v);
-    console.log (json);
-  var results = json.responseData.results;
-    console.log (results);
+var url= "https://www.googleapis.com/customsearch/v1?key=AIzaSyAPEuX4ZOBsuq5wBl61AoMtJRZHArqNQCE&cx=017576662512468239146:omuauf_lfve&q="+v+"&callback=?";
+$.getJSON(url, function (data){
+
+  var results = data.items;
+  
   var ol = document.createElement("ol");
   for (var i=0; i<results.length; i++){
     var r = results[i];
     var li = document.createElement("li");
-    li.innerHTML = "<a href="+r.url+"title="+r.url+"target=_blank>"+r.title+"</a> <h3>"+r.url+"</h3> <p>"+r.content+"</p>";
+    li.innerHTML = "<a href="+r.link+"title="+r.link+"target=_blank>"+r.title+"</a> <h3>"+r.link+"</h3> <p>"+r.snippet+"</p>";
     ol.appendChild(li);
     console.log (r);
   };

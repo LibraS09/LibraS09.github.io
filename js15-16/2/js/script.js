@@ -33,4 +33,5 @@ worker.work();
 var student = new Student("ВУЗ", "100");
 console.log (student);
 student.watchTv();
+
 });
