@@ -286,7 +286,7 @@ console.log (q1);
 q1 = _.uniq(q1);
 console.log ('№1_2 Исключить повторения');
 console.log (q1);
-q1 = _.sortBy(q1);
+q1 = _.sortBy(q1, function (i) { return i.toLowerCase(); });
 console.log ('№1_3 Сортировка по алфавиту');
 console.log (q1);
 
