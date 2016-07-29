@@ -1,0 +1,136 @@
+@font-face {
+font-family: 'helveticaneuecyrmedium';
+src: url('../font/helveticaneuecyr-medium-webfont.eot');
+src: url('../font/helveticaneuecyr-medium-webfont.eot?#iefix') format('embedded-opentype'),
+url('../font/helveticaneuecyr-medium-webfont.woff') format('woff'),
+url('../font/helveticaneuecyr-medium-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+.main {
+  width: 1215px;
+  margin: 0 auto;
+  font-family: helveticaneuecyrmedium, sans-serif;
+}
+.menu {
+  background-image: url(../img/fon.png);
+  background-repeat: repeat;
+  padding: 0 20px;
+}
+.menu li {
+  float: right;
+  padding: 10px 13px;
+}
+.menu1 a, span {
+  color: #fff;
+  /*font-family: helveticaneuecyrmedium, sans-serif;*/
+  font-size: 14px;
+}
+.menu .flag {
+  padding: 4px 13px 0 13px;
+  margin: 2px 0;
+  border-left: 1px solid #4eabda;
+}
+.menu2 a {
+  color: #60b5ed;
+  /*font-family: helveticaneuecyrmedium, sans-serif;*/
+  font-size: 14px;
+}
+li.menu1:hover {
+  background-color: #4eabda;
+  background: -webkit-linear-gradient(rgba(78,171,218,0.9), rgba(78,171,218,0.2));
+  background: -o-linear-gradient(rgba(78,171,218,0.9), rgba(78,171,218,0.2));
+  background: linear-gradient(rgba(78,171,218,0.9), rgba(78,171,218,0.2));
+}
+li.menu1:hover a{
+  text-decoration: underline;
+}
+li.menu2:hover {
+  background-color: #4eabda;
+}
+li.menu2:hover a{
+  color: #fff;
+}
+.menu::after {
+  content: ' ';
+  clear: right;
+  display: block;
+}
+.photo {
+  background-image: url(../img/photo.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1028px;
+  position: relative;
+}
+.black_block {
+  width: 560px;
+  height: 615px;
+  background-color: rgba(0,0,0,0.5);
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+.form_caption {
+  font-size: 24px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+}
+.for_form {
+  width: 276px;
+  padding-top: 20px;
+  margin: 0 auto;
+  color: #ccc;
+  font-size: 14px;
+}
+.for_form div {
+  padding: 10px 0;
+}
+input[type="button"] {
+  width: 276px;
+  height: 35px;
+  border: 0;
+  background-color: rgba(0,0,0,0);
+  background-image: url(../img/facebook.png);
+}
+input[type="text"] {
+  width: 256px;
+  height: 35px;
+  background-color: #111;
+  color: #ccc;
+  padding-left: 20px;
+  border: 0;
+  border-bottom: 2px solid #474747;
+  font-family: helveticaneuecyrmedium, sans-serif;
+  font-size: 14px;
+}
+input[type="text"]:focus {
+  background-color: #1b5288;
+  box-shadow: 0 0 5px 3px #699bcd;
+  border-bottom: 2px solid #1b5288;
+}
+input[type="submit"] {
+width: 150px;
+height: 35px;
+color: #fff;
+background-color: #3a8ecd;
+background: linear-gradient(#67c6e6, #2e7ac4);
+border: 0;
+border-radius: 5px;
+font-family: helveticaneuecyrmedium, sans-serif;
+font-size: 14px;
+}
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+.sm {
+  text-align: center;
+}
+.last_text {
+  text-align: center;
+  color: #fff;
+  font-size: 11px;
+  padding: 10px 0;
+}
