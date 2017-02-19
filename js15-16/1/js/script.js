@@ -14,11 +14,11 @@ $("#form :input").keypress(function(e) {
 });
 
 function search(v) {
-var url= "https://www.googleapis.com/customsearch/v1?key=AIzaSyAPEuX4ZOBsuq5wBl61AoMtJRZHArqNQCE&cx=017576662512468239146:omuauf_lfve&q="+v+"&callback=?";
+var url= "https://www.googleapis.com/customsearch/v1?key=AIzaSyCxU7lDRAjTC3jybx4vjrIFvWPdaDUUW40&cx=017576662512468239146:omuauf_lfve&q="+v+"&callback=?";
 $.getJSON(url, function (data){
 
   var results = data.items;
-  
+
   var ol = document.createElement("ol");
   for (var i=0; i<results.length; i++){
     var r = results[i];
