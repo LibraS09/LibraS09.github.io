@@ -289,7 +289,8 @@ body {
   font-weight: bold; }
   .company-menu ul {
     padding-top: 5px;
-    margin-left: 20%; }
+    margin-left: 20%;
+  }
   .company-menu li {
     float: left;
     margin-right: 5%; }

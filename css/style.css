@@ -7,7 +7,7 @@ ul {
 }
 body {
   font-family: arial, sans-serif;
-  background: url('../img/22-fon-dlya-sayta.jpg');
+  background: url('../img/22-fon-dlya-sayta1.jpg');
 }
 main {
   max-width: 960px;
@@ -42,7 +42,6 @@ hr {
 }
 .work li{
   float: left;
-  vertical-align: top;
 }
 h2 {
   padding: 14px 0;
@@ -63,4 +62,15 @@ h3 {
   content: '';
   display: table;
   clear: both;
+}
+@media (max-width: 768px) {
+  .work li{
+    float: none;
+  }
+  .img {
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+  }
 }
