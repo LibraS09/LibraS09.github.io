@@ -391,6 +391,8 @@ padding-right: 0;
   margin: 20px auto 0;
 }
 footer {
+  width: 1000px;
+  margin: 0 auto;
   padding-top: 17px;
   padding-bottom: 30px;
   font-size: 13px;
@@ -406,6 +408,9 @@ footer li {
   padding: 0 10px;
   display: inline-block;
   border-right: 1px solid rgb( 154, 154, 154 );
+}
+footer li:last-child {
+  border-right: 0;
 }
 footer li a {
   color: rgb( 154, 154, 154 );
