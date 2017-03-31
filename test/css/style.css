@@ -1,0 +1,415 @@
+@font-face {
+    font-family: "PtSans";
+    src: url('../font/pts55f-webfont.woff2') format('woff2'),
+         url('../font/pts55f-webfont.woff') format('woff'),
+         url('../font/pts55f-webfont.ttf') format('truetype'),
+         url('../font/pts55f-webfont.svg#pt_sansregular') format('svg');
+   }
+@font-face {
+    font-family: "Amaranth";
+    src: url('../font/amaranthregular-webfont.woff2') format('woff2'),
+         url('../font/amaranthregular-webfont.woff') format('woff'),
+         url('../font/amaranthregular-webfont.ttf') format('truetype'),
+         url('../font/amaranthregular-webfont.svg#amaranthregular') format('svg');
+   }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.cf::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+body {
+  margin-top: 4px;
+  background: #f1f5e4;
+}
+.logo {
+  background: #fff;
+  height: 80px;
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 18px;
+}
+.logo-ref {
+  display: block;
+  width: 300px;
+}
+.logo-img {
+  position: relative;
+}
+.logo-text {
+  position: absolute;
+  top: 43px;
+  left: 107px;
+  font-family: "PtSans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #737373;
+}
+.natute {
+  background-image: url(../img/hbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 1px solid #f8a05b;
+  height: 630px;
+}
+.moneyback {
+  position: relative;
+  width: 960px;
+  height: 170px;
+  margin: 430px auto 0;
+  padding: 30px 20px 0;
+  background-color: rgba( 255, 255, 255, 0.8 );
+}
+.moneyback-img {
+  width: 205px;
+  float: left;
+  padding-left: 8px;
+}
+.moneyback-text {
+  padding-top: 25px;
+}
+.moneyback-text h2{
+  font-family: "Amaranth", sans-serif;
+  font-weight: bold;
+  font-size: 41px;
+  color: rgb( 255, 97, 16 );
+}
+.moneyback-text p {
+  padding-top: 10px;
+  font-size: 15px;
+  font-family: "PtSans", sans-serif;
+  color: rgb( 62, 62, 62 );
+  line-height: 1.133;
+}
+.ribbon {
+  position: absolute;
+  top: -115px;
+  left: -60px;
+  width: 1124px;
+  height: 145px;
+  /*margin: 310px auto 0;*/
+  background: url(../img/ribbon.png) no-repeat;
+  z-index: 2;
+}
+.order {
+  width: 475px;
+  text-align: right;
+}
+.order h2 {
+  font-size: 36px;
+  font-family: "Amaranth", sans-serif;
+  color: rgb( 255, 255, 255 );
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.order p {
+  font-size: 90px;
+  font-family: "Amaranth";
+  color: rgb( 255, 255, 255 );
+  font-weight: bold;
+  line-height: 0.5;
+}
+.woman {
+  position: absolute;
+  left: 125px;
+  top: -395px;
+  z-index: 1;
+}
+.bottle {
+  position: absolute;
+  left: 415px;
+  top: -450px;
+  z-index: 4;
+}
+.block-form {
+  position: absolute;
+  right: 0;
+  top: -410px;
+  height: 410px;
+  width: 335px;
+  z-index: 3;
+}
+.h-form {
+  height: 360px;
+  background-color: #f6f8fb;
+  border-radius: 10px;
+  padding-left: 55px;
+}
+.h-form h2 {
+  font-size: 30px;
+  font-family: "Amaranth";
+  color: rgb( 255, 97, 16 );
+  font-weight: bold;
+  line-height: 1.5;
+
+}
+.form {
+
+}
+.form-input {
+  height: 254px;
+  overflow: auto;
+}
+.form input[type="text"],
+.form select {
+  margin: 5px 0;
+  height: 30px;
+  width: 250px;
+  padding-left: 10px;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+}
+.form select {
+  box-sizing: content-box;
+}
+.form input[type="text"]::placeholder {
+  padding-left: 20px;
+
+}
+.form input[type="text"]::-webkit-input-placeholder {
+  padding-left: 20px;
+
+}
+.form .rec::placeholder {
+  background-image: url(../img/star.png);
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+}
+.form .rec::-webkit-input-placeholder {
+  background-image: url(../img/star.png);
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+}
+.mail:focus:invalid {
+  border: 1px solid #ff6110;
+}
+.form-button {
+  margin-top: 5px;
+  display: block;
+  width: 260px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 0;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #1660c3 #000 #4681cf;
+  border-radius: 6px;
+  background: linear-gradient(#4681cf, #1660c3) #1660c3;
+  /*transition: 0.2s;*/
+  font-size: 25px;
+  font-family: "Amaranth";
+  color: rgb( 255, 255, 255 );
+  font-weight: bold;
+  text-shadow: 0.5px 0.866px 0px rgb( 0, 0, 0 );
+}
+.form-button:hover {
+  background: linear-gradient(#1660c3, #4681cf) #4681cf;
+}
+.form-button:active {
+  background: linear-gradient(#1660c3, #4681cf) #4681cf;
+}
+.after-form {
+padding-left: 50px;
+}
+.after-form ul {
+  list-style: none;
+}
+.after-form li {
+  padding: 20px 1px;
+  width: 125px;
+  display: inline-block;
+}
+.after-form li div {
+  float: left;
+  width: 35px;
+}
+.after-form p {
+  font-size: 16px;
+  font-family: "Amaranth";
+  color: rgb( 255, 255, 255 );
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.9;
+  text-align: left;
+}
+.main {
+  width: 960px;
+  padding: 20px;
+  margin: 0 auto;
+  background: #fff;
+}
+.features {
+  width: 1000px;
+  height: 120px;
+  margin: 0 auto;
+  padding-top: 15px;
+  background: #fff;
+}
+.features ul {
+  list-style: none;
+  height: 120px;
+  padding: 0 20px;
+  background-image: url(../img/li.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.features li {
+  display: inline-block;
+  float: left;
+  /*height: 120px;*/
+  width: 210px;
+  padding: 20px 55px 0 0;
+}
+.features li:last-child {
+width: 164px;
+padding-right: 0;
+}
+.features li a {
+  display: block;
+  text-decoration: none;
+}
+.features li h2 {
+  font-size: 25px;
+  font-family: "Amaranth";
+  color: rgb( 255, 255, 255 );
+  font-weight: bold;
+  line-height: 0.84;
+}
+.features li h2:hover {
+  color: rgb( 255, 97, 16 );
+}
+.features li p {
+  padding-top: 7px;
+  font-size: 14px;
+  font-family: "PTSans";
+  color: rgb( 255, 255, 255 );
+  line-height: 1;
+  text-align: left;
+}
+.banner {
+  float: right;
+  width: 250px;
+  height: 400px;
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-family: "Amaranth";
+  color: rgb( 255, 255, 255 );
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.9;
+}
+.banner .p1 {
+  padding-top: 15px;
+  font-size: 28px;
+}
+.banner .p2 {
+  font-size: 70px;
+}
+.banner .p3 {
+  font-size: 36px;
+}
+.banner-button {
+  width: 220px;
+  margin: 10px auto;
+  border-color: #ff6110 #000 #ff8242;
+  background: linear-gradient(#ff8242, #ff6110) #ff8242;
+}
+.banner-button:hover {
+  background: linear-gradient(#ff6110, #ff8242) #ff6110;
+}
+.banner-button:active {
+  background: linear-gradient(#ff6110, #ff8242) #ff6110;
+}
+.article {
+  float: left;
+  width: 690px;
+  text-align: left;
+}
+.article ul {
+  list-style: none;
+}
+.article li {
+  padding: 20px 0;
+}
+.article li:nth-child(2) {
+  text-align: right;
+}
+.article h2{
+  font-size: 26px;
+  font-family: "Amaranth";
+  color: rgb( 24, 97, 195 );
+  font-weight: bold;
+  line-height: 1.231;
+}
+.article p{
+  font-size: 15px;
+  font-family: "PTSans";
+  color: rgb( 62, 62, 62 );
+  line-height: 1.133;
+}
+.article-img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: #4b4b4b;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.article-img-r {
+  float: right;
+  margin-right: 0;
+  margin-left: 20px;
+}
+.dream {
+  text-align: center;
+}
+.dream h2 {
+  font-size: 41px;
+  font-family: "Amaranth";
+  color: rgb( 255, 97, 16 );
+  font-weight: bold;
+  line-height: 1.5;
+}
+.dream p {
+  font-size: 15px;
+  font-family: "PTSans";
+  color: rgb( 62, 62, 62 );
+  line-height: 1.133;
+}
+.dream-button {
+  width: 445px;
+  margin: 20px auto 0;
+}
+footer {
+  padding-top: 17px;
+  padding-bottom: 30px;
+  font-size: 13px;
+  font-family: sans-serif;
+  color: rgb( 154, 154, 154 );
+  line-height: 1.308;
+  text-align: center;
+}
+footer ul {
+  list-style: none;
+}
+footer li {
+  padding: 0 10px;
+  display: inline-block;
+  border-right: 1px solid rgb( 154, 154, 154 );
+}
+footer li a {
+  color: rgb( 154, 154, 154 );
+}
+footer li a:hover {
+  color: rgb( 255, 97, 16 );
+}
