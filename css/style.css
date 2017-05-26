@@ -24,6 +24,7 @@ header {
 }
 h1 {
   position: absolute;
+  color: #141817;
   font-size: 40px;
   left: 60px;
   top: 220px;
@@ -45,6 +46,7 @@ hr {
 }
 h2 {
   padding: 14px 0;
+  color: #141817;
 }
 h3 {
   padding-bottom: 7px;
