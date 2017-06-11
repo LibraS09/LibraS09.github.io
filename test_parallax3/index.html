@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:700|Raleway:300|Roboto:500&amp;subset=cyrillic" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+	<header class="header">
+		<div class="logo">
+			<img src="img/logo.png" alt='img'>
+		</div>
+		<div class="tel-bt">
+			<div class="tel">
+				<p>+38 066 111 11 11</p>
+				<p>+38 067 111 11 11</p>
+			</div>
+			<div class="bt">заказать</div>
+		</div>
+	</header>
+	<p class="text">Покупая отпариватель вы получите настоящего  помощника в доме и путешествии</p>
+<div class="effect">
+
+	<div class="section2">
+		<img src="img/img1.png" alt="img">
+	</div>
+
+<div id="element" class="project"> 
+	
+	<div class="project__card">
+		
+		<div class="project__section">
+
+		<div class="section section1">
+			<div class="block block1">
+				<div class="block-img block-img1"></div>
+				<p class="block-p">
+				Миниатюрный дизайн для использования в путешествиях
+				</p>
+			</div>
+			<div class="block block2">
+				<div class="block-img block-img2"></div>
+				<p class="block-p">
+				Подача сухого пара под высоким давлением
+				</p>
+			</div>
+			<div class="block block3">
+				<div class="block-img block-img3"></div>
+				<p class="block-p">
+				Герметичный корпус с системой охлаждения 
+				</p>
+			</div>
+		</div>
+
+		<div class="section section3">
+			<div class="block block4">
+				<div class="block-img block-img4"></div>
+				<p class="block-p">
+				Функция вертикальной и горизонтальной глажки
+				</p>
+			</div>
+			<div class="block block5">
+				<div class="block-img block-img5"></div>
+				<p class="block-p">
+				 Разглаживает вещи без капель и пятен
+				</p>
+			</div>
+			<div class="block block6">
+				<div class="block-img block-img6"></div>
+				<p class="block-p">
+				Готовность к работе за  25 секунд
+				</p>
+			</div>
+		</div>
+
+		</div>
+	</div>
+</div>	<!-- project -->
+</div>  <!-- effect -->
+</div>  <!-- wrapper -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/jquery.plate.js"></script>
+	
+	<script type="text/javascript">
+	$('#element').plate({
+  		// inverse animation
+  		inverse: false,
+	
+	  	// transformation perspective in pixels
+	  	perspective: 500,
+	
+	  	// maximum rotation in degrees
+	  	maxRotation: 5,
+	
+	  	// duration in milliseconds
+  		animationDuration: 200
+  	});
+	</script>
+
+</body>
+</html>

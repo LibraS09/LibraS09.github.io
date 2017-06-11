@@ -1,0 +1,150 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+
+	font-family: 'Raleway', sans-serif;
+	color: rgb( 49, 49, 49 );
+}
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+	background: url(../img/bg-img.png) 0.01% 0 repeat-y,
+				url(../img/bg-img.png) 20% 0 repeat-y,
+				url(../img/bg-img.png) 40% 0 repeat-y,
+				url(../img/bg-img.png) 60% 0 repeat-y,
+				url(../img/bg-img.png) 80% 0 repeat-y,
+				url(../img/bg-img.png) 99.99% 0 repeat-y;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+	padding-top: 25px;
+}
+.logo {
+	width: 140px;
+}
+.tel-bt {
+	width: 370px;
+	display: flex;
+	justify-content: space-between;
+}
+.tel {
+	font-family: 'Roboto', sans-serif;	
+}
+.tel p {
+	padding-bottom: 15px;
+}
+.bt {
+	color: #49bce5;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	width: 145px;
+	height: 41px;
+	line-height: 40px;	
+	background-color: #fff;
+	background-image: url(../img/bt-img.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bt:hover {
+	border-radius: 5px;
+	background: linear-gradient(to right top, #95dadf, #49bce5);
+	color: #fff;
+}
+.text {
+	
+	width: 540px;
+	height: 80px;
+	padding-top: 80px;
+	padding-bottom: 50px;
+	margin: 0 auto;
+	font-size: 24px;
+	text-align: center;
+	font-weight: 300;
+
+}
+.block {
+	width: 200px;
+	height: 290px;
+}
+.block-img {
+	margin: 0 auto;
+	border: 4px solid #fff;
+	border-radius: 50%;
+	width: 158px;
+	height: 158px;
+	
+	background-repeat: no-repeat;
+	box-shadow: 0 0 0 2px #9bdce1;
+}
+.block-img1 {
+	background-image: url(../img/i1.jpg);	
+}
+.block-img2 {
+	background-image: url(../img/i2.jpg);	
+}
+.block-img3 {
+	background-image: url(../img/i3.jpg);	
+}
+.block-img4 {
+	background-image: url(../img/i4.jpg);	
+}
+.block-img5 {
+	background-image: url(../img/i5.jpg);	
+}
+.block-img6 {
+	background-image: url(../img/i6.jpg);	
+}
+
+.block-p {
+	padding-top: 10px;
+	text-align: center;
+}
+.project__section {
+	display: flex;
+	justify-content: space-between;
+}
+.effect {
+	position: relative;
+	
+}
+.section2 {
+	position: absolute;
+	width: 233px;
+	height: 553px;
+	left: calc(50% - 116.5px);
+	top: calc(50% - 276.5px);;
+}
+.section1,
+.section3 {
+	width: 370px;
+}
+.section1 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+.block1 {
+	padding-right: 30px; 
+}
+.block2 {
+	padding-right: 170px; 
+}
+.section3 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.block5 {
+	padding-left: 30px; 
+}
+.block5 {
+	padding-left: 170px;
+} 
+
