@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
   <link rel="stylesheet" href="css/style.css">
 
   <script src="js/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
   <script src="js/jquery.plate.js"></script>
+
   <script type="text/javascript" src="js/script.js"></script>
   <title>Document</title>
 </head>
@@ -18,12 +20,11 @@
 
   <div id="fullpage">
 
-  	<div class="section">
-      <div class="section1 section-height">
+  	<div class="section"> <!-- fullPage - plugin -->
+      <div class="section1 section-height section1__bg">
         <div class="section1__line">
         <div class="container">
           <div class="content">
-
             <header class="header">
               <div class="logo">
               <a href="#"><img src="img/logo.png" alt='img'></a>
@@ -48,17 +49,19 @@
                 Отпариватель BIZOND – это принципиально новый взгляд на скучную глажку
               </p>
             </section>
+
             <div id="moveDown" class="pointer">
               <img src="img/pointer.png" alt="pointer">
             </div>
-          </div>
+          </div>    <!-- content -->
         </div> <!-- container -->
       </div>
       </div> <!-- section1 -->
-    </div>
+    </div> <!-- section -->
+<!-- section2 -->
     <div class="section">
-      <div class="section2">
-        <div class="container">
+      <div class="section2 section-height ">
+        <div class="container section-bg">
           <div class="content">
 
             <header class="header header_p-t">
@@ -74,7 +77,7 @@
               </div>
             </header>
 
-            <section class="section2__text">
+            <section class="section__text section2__text">
               <p class="section2__p section2__p1">
                 Отпариватель BIZOND не оставит складкам на
               </p>
@@ -82,20 +85,21 @@
                 одежде ни единого шанса!
               </p>
             </section>
+
             <section class="section2__video">
               <img src="img/s2-video.jpg" alt="img">
             </section>
             <div id="moveDown" class="pointer">
               <img src="img/pointer2.png" alt="pointer">
             </div>
-          </div>
+          </div> <!-- content     -->
         </div> <!-- container -->
       </div> <!-- section2 -->
-    </div>
-
+    </div>  <!-- section -->
+<!-- section3 -->
     <div class="section">
       <div class="section3 section-height">
-        <div class="container">
+        <div class="container section-bg">
           <div class="content">
 
             <header class="header header_p-t">
@@ -110,7 +114,8 @@
                 <div class="bt"><p>заказать</p></div>
               </div>
             </header>
-            <section class="section3__text">
+
+            <section class="section__text section3__text">
               <p class="section3__p section3__p1">
                 Конкурентные преимущества отпаривателя BIZOND, которые
               </p>
@@ -118,12 +123,12 @@
                 выделяют его среди других аналогов
               </p>
             </section>
-            <section class="section3__plate">
-              <div class="effect">
 
-	<div class="effect__section2">
-		<img src="img/img1.png" alt="img">
-	</div>
+<section class="section3__plate">
+<div class="effect">
+<div class="effect__section2">
+	<img src="img/img1.png" alt="img">
+</div>
 
 <div id="element" class="project">
 	<div class="project__card">
@@ -131,19 +136,19 @@
 		<div class="effect__section effect__section1">
 			<div class="block block1">
 				<div class="block-img block-img1"></div>
-				<p class="block-p">
+				<p class="block__p">
 				Миниатюрный дизайн для использования в путешествиях
 				</p>
 			</div>
 			<div class="block block2">
 				<div class="block-img block-img2"></div>
-				<p class="block-p">
+				<p class="block__p">
 				Подача сухого пара под высоким давлением
 				</p>
 			</div>
 			<div class="block block3">
 				<div class="block-img block-img3"></div>
-				<p class="block-p">
+				<p class="block__p">
 				Герметичный корпус с системой охлаждения
 				</p>
 			</div>
@@ -152,19 +157,19 @@
 		<div class="effect__section effect__section3">
 			<div class="block block4">
 				<div class="block-img block-img4"></div>
-				<p class="block-p">
+				<p class="block__p">
 				Функция вертикальной и горизонтальной глажки
 				</p>
 			</div>
 			<div class="block block5">
 				<div class="block-img block-img5"></div>
-				<p class="block-p">
+				<p class="block__p">
 				 Разглаживает вещи без капель и пятен
 				</p>
 			</div>
 			<div class="block block6">
 				<div class="block-img block-img6"></div>
-				<p class="block-p">
+				<p class="block__p">
 				Готовность к работе за  25 секунд
 				</p>
 			</div>
@@ -174,15 +179,570 @@
 </div>	<!-- project -->
 </div>  <!-- effect -->
 
-            </section>
-          </div>
+</section>
+<div id="moveDown" class="pointer">
+  <img src="img/pointer2.png" alt="pointer">
+</div>
+          </div>  <!-- content -->
         </div> <!-- container -->
       </div> <!-- section3 -->
-    </div>
-  <div class="section">
+    </div>  <!-- section -->
+<!-- section4 -->
+  <div class="section"> <!-- fullPage - plugin -->
+    <div class="section4 section-height">
+      <div class="container section-bg">
+        <div class="content">
 
-  </div>
-</div>
+          <header class="header header_p-t">
+            <div class="logo">
+            <a href="#"><img src="img/logo.png" alt='img'></a>
+            </div>
+            <div class="tel-bt">
+              <div class="tel">
+                <p>+38 066 111 11 11</p>
+                <p>+38 067 111 11 11</p>
+              </div>
+              <div class="bt"><p>заказать</p></div>
+            </div>
+          </header>
 
+          <section class="section__text section4__text">
+            <p class="section4__p section4__p1">
+              Портативный отпариватель BIZOND
+            </p>
+            <p class="section4__p section4__p2">
+              обеспечивает безупречный резуль
+            </p>
+          </section>
+
+        </div>     <!-- content -->
+      </div> <!-- container -->
+    </div> <!-- section4 -->
+  </div>  <!-- section       -->
+<!-- section5 -->
+  <div class="section"> <!-- fullPage - plugin -->
+    <div class="section5 section-height">
+      <div class="container  section-bg">
+        <div class="content">
+
+          <header class="header header_p-t">
+            <div class="logo">
+            <a href="#"><img src="img/logo.png" alt='img'></a>
+            </div>
+            <div class="tel-bt">
+              <div class="tel">
+                <p>+38 066 111 11 11</p>
+                <p>+38 067 111 11 11</p>
+              </div>
+              <div class="bt"><p>заказать</p></div>
+            </div>
+          </header>
+
+          <section class="section__text section5__text">
+            <p class="section5__p section5__p1">
+              Портативный отпариватель BIZOND – это быстрая
+            </p>
+            <p class="section5__p section5__p2">
+              и безопасная глажка любых видов тканей
+            </p>
+          </section>
+
+          <table class="table">
+            <thead class="thead">
+              <tr>
+                <td></td>
+                <td>
+                  <img src="img/table-2.png" alt="table-img">
+                </td>
+
+                <td>
+                  <img src="img/table-3.png" alt="table-img">
+                </td>
+
+                <td>
+                  <img src="img/table-4.png" alt="table-img">
+                </td>
+
+                <td>
+                  <img src="img/table-5.png" alt="table-img">
+                </td>
+
+                <td>
+                  <img src="img/table-6.png" alt="table-img">
+                </td>
+
+              </tr>
+            </thead>
+            <tbody class="tbody">
+              <tr class="tr1">
+                <td><span>Характеристики</span></td>
+                <td>Отпариватель BIZOND</td>
+                <td>Тип отпаривателя 1 </td>
+                <td>Тип отпаривателя 2 </td>
+                <td>Стационарный отпариватель</td>
+                <td>Утюг</td>
+              </tr>
+              <tr>
+                <td><span>Сухой пар</span> (существенная экономия
+                  времени глажки) </td>
+                <td><p></p></td>
+                <td><div></div></td>
+                <td><div></div></td>
+                <td><div></div></td>
+                <td><div></div></td>
+              </tr>
+              <tr>
+                <td><span>Сохраняет цвет и структуру ткани</span> (ваши
+                  вещи прослужат дольше)</td>
+                <td><p></p></td>
+                <td><p></p></td>
+                <td><p></p></td>
+                <td><p></p></td>
+                <td><div></div></td>
+              </tr>
+              <tr>
+                <td><span>Электронная насосная система</span> (не
+                  брызгает водой и не оставляет мокрые следы)</td>
+                <td><p></p></td>
+                <td><div></div></td>
+                <td><div></div></td>
+                <td><div></div></td>
+                <td><div></div></td>
+              </tr>
+              <tr>
+                <td><span>Нано-фильтр</span> (возможность
+                  использовать водопроводную воду)</td>
+                <td><p></p></td>
+                <td><div></div></td>
+                <td><div></div></td>
+                <td><div></div></td>
+                <td><div></div></td>
+              </tr>
+              <tr>
+                <td><span>Портативность</span> (удобно использовать в путишествии)</td>
+                <td><p></p></td>
+                <td><p></p></td>
+                <td><p></p></td>
+                <td><div></div></td>
+                <td><div></div></td>
+              </tr>
+              <tr>
+                <td><span>Горизонтальное разглаживание</span> (удобно
+                  использовать в путешествиях)</td>
+                <td><p></p></td>
+                <td><div></div></td>
+                <td><div></div></td>
+                <td><div></div></td>
+                <td><p></p></td>
+              </tr>
+              <tr>
+                <td><span>Вертикальное разглаживание</span> (возможность
+                  разглаживать на плечиках)</td>
+                <td><p></p></td>
+                <td><p></p></td>
+                <td><p></p></td>
+                <td><p></p></td>
+                <td><div></div></td>
+              </tr>
+              <tr>
+                <td><span>Закрытый тип контейнера для воды</span> (защита
+                  от проливания гарячей воды)</td>
+                <td><p></p></td>
+                <td><p></p></td>
+                <td><div></div></td>
+                <td><p></p></td>
+                <td><p></p></td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="moveDown" class="pointer">
+            <img src="img/pointer2.png" alt="pointer">
+          </div>
+        </div>  <!-- content     -->
+      </div> <!-- container -->
+    </div> <!-- section5 -->
+  </div>  <!-- section       -->
+<!-- section6 -->
+  <div class="section"> <!-- fullPage - plugin -->
+    <div class="section6 section-height">
+      <div class="container  section-bg">
+        <div class="content">
+
+          <header class="header header_p-t">
+            <div class="logo">
+            <a href="#"><img src="img/logo.png" alt='img'></a>
+            </div>
+            <div class="tel-bt">
+              <div class="tel">
+                <p>+38 066 111 11 11</p>
+                <p>+38 067 111 11 11</p>
+              </div>
+              <div class="bt"><p>заказать</p></div>
+            </div>
+          </header>
+
+          <section class="section__text section6__text">
+            <p class="section6__p section6__p1">
+              Отпариватель BIZOND сохранит Ваши вещи,
+              как новые, <br> даже после многочисленных глажек
+            </p>
+            <p class="section6__p section6__p2">
+              BIZOND сохраняет первоначальный цвет
+              ткани и не разрушает её структуру
+            </p>
+          </section>
+
+          <section class="slick-slide-plugin6" onselectstart="return false" onmousedown="return false">
+          <ul>
+            <li class="slick-slide-li1">
+          <div class="slick-slider-for">
+            <div class="for__slide__item">
+                <div class="for__img">
+                  <img src="img/slide6-1.png" alt="img">
+                </div>
+            </div>
+            <div class="for__slide__item">
+                <div class="for__img">
+                  <img src="img/slide6-2.png" alt="img">
+                </div>
+            </div>
+            <div class="for__slide__item">
+                <div class="for__img">
+                  <img src="img/slide6-3.png" alt="img">
+                </div>
+            </div>
+            <div class="for__slide__item">
+                <div class="for__img">
+                  <img src="img/slide6-4.png" alt="img">
+                </div>
+            </div>
+            <div class="for__slide__item">
+                <div class="for__img">
+                  <img src="img/slide6-5.png" alt="img">
+                </div>
+            </div>
+          </div>
+          </li>
+          <li class="slick-slide-li2">
+          <div class="slick-slide-li2__text">сравните</div>
+          <div class="slider-box">
+          <div class="slick-slider-nav-size">
+          <div class="slick-slider-nav">
+            <div class="nav__slide__item">
+                <div class="nav__number">1</div>
+            </div>
+            <div class="nav__slide__item">
+                <div class="nav__number">10</div>
+            </div>
+            <div class="nav__slide__item">
+                <div class="nav__number">20</div>
+            </div>
+            <div class="nav__slide__item">
+                <div class="nav__number">30</div>
+            </div>
+            <div class="nav__slide__item">
+                <div class="nav__number">40</div>
+            </div>
+          </div>
+        </div>
+        <p class="slider-box__text">
+          количество глажек
+        </p>
+      </div>
+      </li>
+      <li class="slick-slide-li3">
+        <img src="img/slide6-1.png" alt="img">
+      </li>
+      </ul>
+      </section>
+      <div id="moveDown" class="pointer">
+        <img src="img/pointer2.png" alt="pointer">
+      </div>
+        </div> <!-- content     -->
+      </div> <!-- container -->
+    </div> <!-- section6 -->
+  </div>  <!-- section       -->
+<!-- section7 -->
+  <div class="section"> <!-- fullPage - plugin -->
+    <div class="section7 section-height">
+      <div class="container section-bg">
+        <div class="content">
+
+          <header class="header header_p-t">
+            <div class="logo">
+            <a href="#"><img src="img/logo.png" alt='img'></a>
+            </div>
+            <div class="tel-bt">
+              <div class="tel">
+                <p>+38 066 111 11 11</p>
+                <p>+38 067 111 11 11</p>
+              </div>
+              <div class="bt"><p>заказать</p></div>
+            </div>
+          </header>
+
+          <div class="section__text section7__text">
+            <p class="section7__p section7__p1">
+              Отпариватель BIZOND разглаживает все типы тканей
+            </p>
+            <p class="section7__p section7__p2">
+              Эффективно используйте его также для дезинфекции
+              детских игрушек и <br>мебели, поскольку пар уничтожает
+               до 96 % всех бактерий.
+            </p>
+          </div>
+
+          <section class="slick-slide-plugin" onselectstart="return false" onmousedown="return false">
+          <div class="slick-slide-center">
+            <div class="slide__item">
+              <figure>
+                <p><img src="img/slide7-1.png" alt="img"></p>
+                <figcaption>блуза</figcaption>
+              </figure>
+              <div class="slide__item__line">
+              </div>
+            </div>
+            <div class="slide__item">
+              <figure>
+                <p><img src="img/slide7-2.png" alt="img"></p>
+                <figcaption>рубашка</figcaption>
+              </figure>
+              <div class="slide__item__line">
+              </div>
+            </div>
+            <div class="slide__item">
+              <figure>
+                <p><img src="img/slide7-3.png" alt="img"></p>
+                <figcaption>костюм</figcaption>
+              </figure>
+              <div class="slide__item__line">
+              </div>
+            </div>
+            <div class="slide__item">
+              <figure>
+                <p><img src="img/slide7-4.png" alt="img"></p>
+                <figcaption>джинсы</figcaption>
+              </figure>
+              <div class="slide__item__line">
+              </div>
+            </div>
+            <div class="slide__item">
+              <figure>
+                <p><img src="img/slide7-5.png" alt="img"></p>
+                <figcaption>свадебное платье</figcaption>
+              </figure>
+              <div class="slide__item__line">
+              </div>
+            </div>
+            <div class="slide__item">
+              <figure>
+                <p><img src="img/slide7-6.png" alt="img"></p>
+                <figcaption>верхняя одежда</figcaption>
+              </figure>
+              <div class="slide__item__line">
+              </div>
+            </div>
+          </div>
+          </section>
+          <div id="moveDown" class="pointer">
+            <img src="img/pointer2.png" alt="pointer">
+          </div>
+        </div> <!-- content -->
+      </div> <!-- container -->
+    </div> <!-- section7 -->
+  </div>  <!-- section       -->
+
+<!-- section8 -->
+  <div class="section"> <!-- fullPage - plugin -->
+    <div class="section8 section-height">
+      <div class="container  section-bg">
+        <div class="content">
+
+          <header class="header header_p-t">
+            <div class="logo">
+            <a href="#"><img src="img/logo.png" alt='img'></a>
+            </div>
+            <div class="tel-bt">
+              <div class="tel">
+                <p>+38 066 111 11 11</p>
+                <p>+38 067 111 11 11</p>
+              </div>
+              <div class="bt"><p>заказать</p></div>
+            </div>
+          </header>
+
+          <div class="section__text section8__text">
+            <p class="section8__p section8__p1">
+              Отпариватель BIZOND разглаживает все типы тканей
+            </p>
+            <p class="section8__p section8__p2">
+              Эффективно используйте его также для дезинфекции
+              детских игрушек и <br>мебели, поскольку пар уничтожает
+               до 96 % всех бактерий.
+            </p>
+          </div>
+
+          <section class="slick-slide-plugin" onselectstart="return false" onmousedown="return false">
+          <div class="slick-slide-center">
+            <div class="slide__item">
+              <figure>
+                <p><img src="img/slide8-1.png" alt="img"></p>
+                <figcaption>мягкие игрушки</figcaption>
+              </figure>
+              <div class="slide__item__line">
+              </div>
+            </div>
+            <div class="slide__item">
+              <figure>
+                <p><img src="img/slide8-2.png" alt="img"></p>
+                <figcaption>занавески</figcaption>
+              </figure>
+              <div class="slide__item__line">
+              </div>
+            </div>
+            <div class="slide__item">
+              <figure>
+                <p><img src="img/slide8-3.png" alt="img"></p>
+                <figcaption>постельное белье</figcaption>
+              </figure>
+              <div class="slide__item__line">
+              </div>
+            </div>
+            <div class="slide__item">
+              <figure>
+                <p><img src="img/slide8-4.png" alt="img"></p>
+                <figcaption>мягкая мебель</figcaption>
+              </figure>
+              <div class="slide__item__line">
+              </div>
+            </div>
+            <div class="slide__item">
+              <figure>
+                <p><img src="img/slide8-5.png" alt="img"></p>
+                <figcaption>матрас</figcaption>
+              </figure>
+              <div class="slide__item__line">
+              </div>
+            </div>
+            <div class="slide__item">
+              <figure>
+                <p><img src="img/slide8-6.png" alt="img"></p>
+                <figcaption>одежда для малишей</figcaption>
+              </figure>
+              <div class="slide__item__line">
+              </div>
+            </div>
+          </div>
+          </section>
+          <div id="moveDown" class="pointer">
+            <img src="img/pointer2.png" alt="pointer">
+          </div>
+        </div> <!-- content -->
+      </div> <!-- container -->
+    </div> <!-- section8 -->
+  </div>  <!-- section       -->
+<!-- section9 -->
+  <div class="section">   <!-- fullPage - plugin -->
+    <div class="section9 section-height">
+      <div class="container section-bg">
+        <div class="content">
+
+          <header class="header header_p-t">
+            <div class="logo">
+            <a href="#"><img src="img/logo.png" alt='img'></a>
+            </div>
+            <div class="tel-bt">
+              <div class="tel">
+                <p>+38 066 111 11 11</p>
+                <p>+38 067 111 11 11</p>
+              </div>
+              <div class="bt"><p>заказать</p></div>
+            </div>
+          </header>
+
+          <div class="section__text section9__text">
+            <p class="section9__p section9__p1">
+              инновационные Технологии благодаря которым отпариватель
+            </p>
+            <p class="section9__p section9__p2">
+              bizond идеально разгладит вашу одежду
+            </p>
+          </div>
+
+          <section class="slick-slide-plugin9" onselectstart="return false" onmousedown="return false">
+          <div class="slick-slide-fade">
+
+            <div class="fade__slide__item">
+                <div class="fade__img">
+                  <img class="fade__img1" src="img/slide9-1.png" alt="img">
+                </div>
+              <div class="fade__text">
+                <p>
+                  1. Инновационная технология Electronic Pump System
+                  обеспечивает быстрый старт за 25 секунд.
+                </p>
+                <p>
+                  2. 100 % защита рук от извержения горячего пара.
+                </p>
+                <p>
+                  3. Electronic Pump System создает специальный сухой пар,
+                  который быстро и легко разглаживает любые складки на тканях.
+                </p>
+              </div>
+            </div>
+
+            <div class="fade__slide__item">
+                <div class="fade__img">
+                  <img class="fade__img2" src="img/slide9-2.png" alt="img">
+                </div>
+              <div class="fade__text">
+                <p>
+                  1. Nano Polymer Filter обеспечивает длительный
+                   срок службы отпаривателя.
+                </p>
+                <p>
+                  2. Nano Polymer Filter защищает нагревательный
+                   элемент отпаривателя от воздействия водопроводной воды.
+                </p>
+                <p>
+                  3. Благодаря Nano Polymer Filter можно использовать
+                  даже обычную воду из-под крана.
+                </p>
+              </div>
+            </div>
+
+            <div class="fade__slide__item">
+                <div class="fade__img">
+                  <img class="fade__img3" src="img/slide9-3.png" alt="img">
+                </div>
+              <div class="fade__text">
+                <p>
+                  1. Корпус устройства полностью герметичен, а вода
+                   находится в специальном контейнере.
+                </p>
+                <p>
+                  2. Технология Cooling Touch Surface препятствует нагреву
+                   ручки отпаривателя в процессе глажки.
+                </p>
+                <p>
+                  3. Автоматическое отключение отпаривателя, если в контейнере
+                   закончилась вода или
+                    отпариватель бездействует дольше 5 минут.
+                </p>
+              </div>
+            </div>
+
+          </div>
+          </section>
+          <div id="moveDown" class="pointer">
+            <img src="img/pointer2.png" alt="pointer">
+          </div>
+        </div> <!-- content -->
+      </div> <!-- container -->
+    </div> <!-- section9 -->
+  </div>  <!-- section       -->
+
+</div><!-- id="fullpage -->
+<script type="text/javascript" src="js/slick.min.js"></script>
 </body>
 </html>

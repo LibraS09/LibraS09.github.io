@@ -1,50 +1,40 @@
 $(document).ready(function() {
-
 $('#fullpage').fullpage({
 navigation: true,
 navigationPosition: 'left',
-navigationTooltips: ['first Slide', 'secondSlide',
-'3 Slide','4 Slide'],
+navigationTooltips: ['first Slide', 'secondSlide', '3 Slide','4 Slide'],
 afterLoad: function(anchorLink, index){
+	function beginAnime (section, anime1, no1,  anime2, no2) {
+		$(section+"__p1").animate({opacity: 1}, 100, 'linear').removeClass(no1).addClass(anime1);
+		$(section+"__p2").animate({opacity: 1}, 300, 'linear').removeClass(no2).addClass(anime2);
+	};
+	function endAnime (section, anime1, no1, anime2, no2) {
+		$(section+"__p1").removeClass(anime1).addClass(no1).css({"opacity": 0});
+		$(section+"__p2").removeClass(anime2).addClass(no2).css({"opacity": 0});
+	};
 	if (index == 1) {
-		$(".section1__h1").slideDown().animate({opacity: 1}, 10, 'linear');
-		$(".section1__p").slideDown().animate({ opacity: 1}, 30, 'linear');
-		$(".section1__h1").slideDown().removeClass("no-anime50");
-		$(".section1__h1").slideDown().addClass("anime03");
-		$(".section1__p1").slideDown().removeClass("no-anime70");
-		$(".section1__p1").slideDown().addClass("anime08");
-		$(".section1__p2").slideDown().removeClass("no-anime70");
-		$(".section1__p2").slideDown().addClass("anime13");
-		};
-	if (index == 2) {
-		$(".section1__h1").slideDown().removeClass("anime03");
-		$(".section1__h1").slideDown().addClass("no-anime50");
-		$(".section1__p1").slideDown().removeClass("anime08");
-		$(".section1__p1").slideDown().addClass("no-anime70");
-		$(".section1__p2").slideDown().removeClass("anime13");
-		$(".section1__p2").slideDown().addClass("no-anime70");
-		$(".section1__h1").css({"opacity": 0});
-		$(".section1__p").css({"opacity": 0});
-
-		$(".section2__p1").slideDown().animate({opacity: 1}, 10, 'linear');
-		$(".section2__p2").slideDown().animate({opacity: 1}, 30, 'linear');
-		$(".section2__p1").slideDown().removeClass("no-anime50");
-		$(".section2__p1").slideDown().addClass("anime03");
-		$(".section2__p2").slideDown().removeClass("no-anime50");
-		$(".section2__p2").slideDown().addClass("anime08");
-		}
-	if ((index == 1) || (index == 3)) {
-		$(".section2__p1").slideDown().removeClass("anime03");
-		$(".section2__p1").slideDown().addClass("no-anime50");
-		$(".section2__p2").slideDown().removeClass("anime08");
-		$(".section2__p2").slideDown().addClass("no-anime50");
-		$(".section2__p").css({"opacity": 0});
+		$(".section1__h1").animate({opacity: 1}, 100, 'linear').removeClass("no-anime50").addClass("anime03");
+		beginAnime (".section1", "anime08", "no-anime70", "anime13", "no-anime70");
+	} else {
+		$(".section1__h1").removeClass("anime03").addClass("no-anime50").css({"opacity": 0});
+		endAnime (".section1", "anime08", "no-anime70", "anime13", "no-anime70");
+		// $(".section-bg")
+	};
+	for (var i = 2; i <= 8; i++) {
+		if (index == i) {
+			beginAnime (".section"+i, "anime03", "no-anime50", "anime08", "no-anime50");
+		} else {
+			endAnime (".section"+i, "anime03", "no-anime50", "anime08", "no-anime50");
 		}
 	}
+
+	}
 });
+
 $(document).on('click', '#moveDown', function(){
 $.fn.fullpage.moveSectionDown();
 });
+
 $('#element').plate({
   	// inverse animation
   	inverse: false,
@@ -55,4 +45,63 @@ $('#element').plate({
 	  // duration in milliseconds
   	animationDuration: 200
   	});
+// slide for 7 8------------------
+
+$('.slick-slide-center').slick({
+  centerMode: true,
+  centerPadding: '0px',
+  slidesToShow: 5,
+	autoplay: true,
+  autoplaySpeed: 2000,
+	pauseOnHover: false,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+// slide for 9------------------
+$('.slick-slide-fade').slick({
+  dots: true,
+  infinite: true,
+	arrows: false,
+	pauseOnHover: false,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
+// slide for 6------------------
+$('.slick-slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slick-slider-nav'
+});
+$('.slick-slider-nav').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  asNavFor: '.slick-slider-for',
+  dots: false,
+  centerMode: false,
+  focusOnSelect: true,
+	arrows: true,
+	centerPadding: '0px'
+});
+
 });
