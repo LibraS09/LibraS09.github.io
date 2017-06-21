@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script src="js/jquery-3.2.1.min.js"></script>
+  <!-- <script type="text/javascript" src="js/vendors/scrolloverflow.min.js"></script> -->
   <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
   <script src="js/jquery.plate.js"></script>
 
@@ -18,10 +19,14 @@
 </head>
 <body>
 
-  <div id="fullpage">
+  <div id="fullpage"> <!-- fullPage - plugin -->
 
   	<div class="section"> <!-- fullPage - plugin -->
-      <div class="section1 section-height section1__bg">
+      <div onmouseover="vidplay()" class="section1 section-height">
+        <div class="section1__bg">
+          <video  id="Video1" autoplay loop="loop" >
+            <source src="video/муви 2.mp4" type="video/mp4">
+          </video>
         <div class="section1__line">
         <div class="container">
           <div class="content">
@@ -55,6 +60,7 @@
             </div>
           </div>    <!-- content -->
         </div> <!-- container -->
+      </div>
       </div>
       </div> <!-- section1 -->
     </div> <!-- section -->
@@ -382,6 +388,7 @@
           </header>
 
           <section class="section__text section6__text">
+
             <p class="section6__p section6__p1">
               Отпариватель BIZOND сохранит Ваши вещи,
               как новые, <br> даже после многочисленных глажек
@@ -660,16 +667,17 @@
             </div>
           </header>
 
-          <div class="section__text section9__text">
-            <p class="section9__p section9__p1">
-              инновационные Технологии благодаря которым отпариватель
-            </p>
-            <p class="section9__p section9__p2">
-              bizond идеально разгладит вашу одежду
-            </p>
-          </div>
-
           <section class="slick-slide-plugin9" onselectstart="return false" onmousedown="return false">
+
+            <div class="section__text section9__text">
+              <p class="section9__p section9__p1">
+                инновационные Технологии благодаря которым отпариватель
+              </p>
+              <p class="section9__p section9__p2">
+                bizond идеально разгладит вашу одежду
+              </p>
+            </div>
+
           <div class="slick-slide-fade">
 
             <div class="fade__slide__item">
@@ -742,7 +750,19 @@
     </div> <!-- section9 -->
   </div>  <!-- section       -->
 
+  <!-- section10 -->
+    <div class="section">   <!-- fullPage - plugin -->
+      10
+    </div>  <!-- section       -->
+
 </div><!-- id="fullpage -->
 <script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript">
+function vidplay() {
+  var video = document.getElementById("Video1");
+  if (video.paused) {
+  video.play();
+  } }
+</script>
 </body>
 </html>

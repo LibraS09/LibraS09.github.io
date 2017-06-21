@@ -1,9 +1,20 @@
 $(document).ready(function() {
 $('#fullpage').fullpage({
+// scrollOverflow: true,
+
+autoScrolling: true,
+verticalCentered: false,
+fitToSection: true,
+paddingTop: '0px',
+paddingBottom: '0px',
 navigation: true,
 navigationPosition: 'left',
 navigationTooltips: ['first Slide', 'secondSlide', '3 Slide','4 Slide'],
+afterRender: function(){
+
+},
 afterLoad: function(anchorLink, index){
+
 	function beginAnime (section, anime1, no1,  anime2, no2) {
 		$(section+"__p1").animate({opacity: 1}, 100, 'linear').removeClass(no1).addClass(anime1);
 		$(section+"__p2").animate({opacity: 1}, 300, 'linear').removeClass(no2).addClass(anime2);
@@ -13,22 +24,22 @@ afterLoad: function(anchorLink, index){
 		$(section+"__p2").removeClass(anime2).addClass(no2).css({"opacity": 0});
 	};
 	if (index == 1) {
+
 		$(".section1__h1").animate({opacity: 1}, 100, 'linear').removeClass("no-anime50").addClass("anime03");
 		beginAnime (".section1", "anime08", "no-anime70", "anime13", "no-anime70");
 	} else {
 		$(".section1__h1").removeClass("anime03").addClass("no-anime50").css({"opacity": 0});
 		endAnime (".section1", "anime08", "no-anime70", "anime13", "no-anime70");
-		// $(".section-bg")
+
 	};
-	for (var i = 2; i <= 8; i++) {
+	for (var i = 2; i <= 9; i++) {
 		if (index == i) {
 			beginAnime (".section"+i, "anime03", "no-anime50", "anime08", "no-anime50");
 		} else {
 			endAnime (".section"+i, "anime03", "no-anime50", "anime08", "no-anime50");
 		}
 	}
-
-	}
+}
 });
 
 $(document).on('click', '#moveDown', function(){
