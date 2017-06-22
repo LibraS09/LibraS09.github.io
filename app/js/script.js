@@ -32,7 +32,7 @@ afterLoad: function(anchorLink, index){
 		endAnime (".section1", "anime08", "no-anime70", "anime13", "no-anime70");
 
 	};
-	for (var i = 2; i <= 9; i++) {
+	for (var i = 2; i <= 11; i++) {
 		if (index == i) {
 			beginAnime (".section"+i, "anime03", "no-anime50", "anime08", "no-anime50");
 		} else {
@@ -86,7 +86,20 @@ $('.slick-slide-center').slick({
     }
   ]
 });
+// slide for 4------------------
+$('.slick-slide-fade4').slick({
+  dots: false,
+  infinite: true,
+	arrows: false,
+	pauseOnHover: false,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
+	autoplay: true,
+  autoplaySpeed: 3000
+});
 // slide for 9------------------
+
 $('.slick-slide-fade').slick({
   dots: true,
   infinite: true,
