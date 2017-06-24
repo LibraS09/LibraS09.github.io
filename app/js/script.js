@@ -1,7 +1,6 @@
 $(document).ready(function() {
 $('#fullpage').fullpage({
 // scrollOverflow: true,
-
 autoScrolling: true,
 verticalCentered: false,
 fitToSection: true,
@@ -11,10 +10,9 @@ navigation: true,
 navigationPosition: 'left',
 navigationTooltips: ['first Slide', 'secondSlide', '3 Slide','4 Slide'],
 afterRender: function(){
-
+$('#fp-nav').css({"opacity": 0});
 },
 afterLoad: function(anchorLink, index){
-
 	function beginAnime (section, anime1, no1,  anime2, no2) {
 		$(section+"__p1").animate({opacity: 1}, 100, 'linear').removeClass(no1).addClass(anime1);
 		$(section+"__p2").animate({opacity: 1}, 300, 'linear').removeClass(no2).addClass(anime2);
@@ -24,13 +22,13 @@ afterLoad: function(anchorLink, index){
 		$(section+"__p2").removeClass(anime2).addClass(no2).css({"opacity": 0});
 	};
 	if (index == 1) {
-
 		$(".section1__h1").animate({opacity: 1}, 100, 'linear').removeClass("no-anime50").addClass("anime03");
 		beginAnime (".section1", "anime08", "no-anime70", "anime13", "no-anime70");
+		$('#fp-nav').animate({opacity: 0}, 500, 'linear');
 	} else {
 		$(".section1__h1").removeClass("anime03").addClass("no-anime50").css({"opacity": 0});
 		endAnime (".section1", "anime08", "no-anime70", "anime13", "no-anime70");
-
+		$('#fp-nav').animate({opacity: 1}, 1000, 'linear');
 	};
 	for (var i = 2; i <= 11; i++) {
 		if (index == i) {
@@ -39,6 +37,11 @@ afterLoad: function(anchorLink, index){
 			endAnime (".section"+i, "anime03", "no-anime50", "anime08", "no-anime50");
 		}
 	}
+	if (index == 12) {
+		$('.header-fixed').slideUp(500);
+	} else {
+		$('.header-fixed').slideDown(500);
+	};
 }
 });
 
@@ -50,7 +53,7 @@ $('#element').plate({
   	// inverse animation
   	inverse: false,
 	  // transformation perspective in pixels
-	  perspective: 500,
+	  perspective: 1000,
 	  // maximum rotation in degrees
 	  maxRotation: 5,
 	  // duration in milliseconds
@@ -96,7 +99,7 @@ $('.slick-slide-fade4').slick({
   fade: true,
   cssEase: 'linear',
 	autoplay: true,
-  autoplaySpeed: 3000
+  autoplaySpeed: 5000
 });
 // slide for 9------------------
 
@@ -127,5 +130,8 @@ $('.slick-slider-nav').slick({
 	arrows: true,
 	centerPadding: '0px'
 });
-
+$('.slick-slider-nav').on('beforeChange', function(event, slick, direction){
+  $('.slick-slide-li3').animate({opacity: 0.7}, 250)
+	.animate({opacity: 1}, 250);
+});
 });
