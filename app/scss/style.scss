@@ -82,10 +82,11 @@ ul li a.active span {
 .header-fixed {
   position: fixed;
   z-index: 9999;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
   height: 93px;
   width: 100%;
-  box-shadow: 0 0 13px 1px rgb(244, 244, 244);
+
+  // box-shadow: 0 0 13px 1px rgb(244, 244, 244);
 }
 .header {
 	display: flex;
@@ -169,7 +170,7 @@ ul li a.active span {
 .pointer {
   position: absolute;
   bottom: 20px;
-  left: calc(50% - 32px);
+  left: calc(50% - 21px);
 }
 .anime03 {
   transition: 0.3s ease-out;
@@ -212,7 +213,7 @@ ul li a.active span {
 // section3 ------------------------------
 .block {
 	width: 200px;
-	height: 260px;
+	height: 255px;
 }
 .block-img {
 	margin: 0 auto;
@@ -333,10 +334,10 @@ ul li a.active span {
 }
 // section5 ------------------------------
 .table {
-  font-size: 18px;
+  font-size: 11px;
   font-family: "Raleway", sans-serif;
   color: rgb( 59, 59, 59 );
-  line-height: 1;
+  line-height: 1.2;
   text-align: left;
   font-weight: lighter;
   tr {
@@ -365,7 +366,9 @@ ul li a.active span {
   border: 1px solid #efefef;
   box-shadow: 0 0 7px 4px #efefef;
   span {
+    display: block;
     font-weight: 600;
+    font-size: 18px;
   }
   p {
     display: inline-block;
@@ -476,6 +479,7 @@ ul li a.active span {
 .slick-slide-li1,
 .slick-slide-li3
 {
+  position: relative;
   width: 426px;
 }
 .slick-slide-li2 {
@@ -493,6 +497,17 @@ ul li a.active span {
   line-height: 2;
   text-align: center;
   padding-bottom: 37px;
+}
+.slick-slide-li1__img-absolute {
+  position: absolute;
+  z-index: 100;
+  top: 91%;
+}
+.slick-slide-li3__img-absolute {
+  position: absolute;
+  z-index: 100;
+  right: 110px;
+  top: 85%;
 }
 // section7 ------------------------------
 
@@ -565,17 +580,24 @@ ul li a.active span {
 }
 .fade__text {
   width: 600px;
-  padding-top: 245px;
+  padding-top: 195px;
   padding-left: 63px;
   float: left;
-}
-.fade__text p {
-  font-size: 16px;
-  font-family: "Raleway", sans-serif;
-  color: rgb( 49, 49, 49 );
-  line-height: 1.125;
-  font-weight: lighter;
-  padding-bottom: 34px;
+  h3 {
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    color: rgb( 49, 49, 49 );
+    line-height: 1;
+    padding-bottom: 40px;
+  }
+  p {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    color: rgb( 49, 49, 49 );
+    line-height: 1.125;
+    font-weight: lighter;
+    padding-bottom: 34px;
+  }
 }
 .slick-dots {
   height: 148px;
@@ -618,11 +640,11 @@ ul li a.active span {
     }
   }
 }
-.section9__text {
-  position: absolute;
-  left: 470px;
-  top: 255px;
-}
+// .section9__text {
+//   position: absolute;
+//   left: 470px;
+//   top: 255px;
+// }
 // section10------------------------------
 .two-columns {
   display: flex;
@@ -638,7 +660,7 @@ ul li a.active span {
   padding-left: 200px;
   width: 570px;
   h3 {
-  font-size: 18px;
+  font-size: 24px;
   font-family: "Raleway" , sans-serif;
   color: rgb( 49, 49, 49 );
   text-transform: uppercase;
@@ -702,7 +724,7 @@ ul li a.active span {
 }
 .footer-bg {
   position: absolute;
-  top: calc(100% - 105px);
+  top: calc(100% - 104px);
   height: 105px;
   width: 100%;
   background: #fff;
@@ -715,6 +737,7 @@ ul li a.active span {
   padding-left: 40px;
 }
 .section12__img {
+  height: 876px;
   width: 660px;
 }
 .section12__text {
@@ -736,17 +759,21 @@ ul li a.active span {
   font-weight: 300;
   }
   ul {
-    padding-bottom: 20px;
+    padding-top: 25px;
   }
   li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-image: url(../img/img12-1.png);
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 0 5px;
     height: 43px;
+    padding-bottom: 16px;
   }
   .section12__text__p {
     padding-left: 54px;
-    line-height: 43px;
+    // line-height: 43px;
     text-align: left;
   }
 }
@@ -788,7 +815,7 @@ ul li a.active span {
 
   &:hover {
     color: #fff;
-    background-color: #95dadf;
+    background: linear-gradient(to right top, #95dadf, #49bce5);
   }
 }
 .footer-logo-info {

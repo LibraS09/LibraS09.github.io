@@ -38,8 +38,8 @@
   <div id="fullpage"> <!-- fullPage - plugin -->
 
   	<div class="section"> <!-- fullPage - plugin -->
-      <div onmouseover="vidplay()" class="section1 section-height">
-        <div class="section1__bg">
+      <div  class="section1 section-height">
+        <div onmouseover="vidplay()" class="section1__bg">
           <video  id="Video1" autoplay loop poster="img/bg-video1.jpg">
             <source src="video/муви 2.mp4"
             type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
@@ -56,15 +56,13 @@
               Принципиально новый взгляд на скучную глажку.
               </p>
               <p class="section1__p section1__p2">
-
               </p>
             </section>
-
-            <div id="moveDown" class="pointer">
-              <img src="img/pointer.png" alt="pointer">
-            </div>
           </div>    <!-- content -->
         </div> <!-- container -->
+      </div>
+      <div id="moveDown" class="pointer">
+        <img src="img/pointer.png" alt="pointer">
       </div>
       </div> <!-- section1 -->
     </div> <!-- section -->
@@ -88,11 +86,12 @@
             <section class="section2__video">
               <img src="img/s2-video.jpg" alt="img">
             </section>
-            <div id="moveDown" class="pointer">
-              <img src="img/pointer2.png" alt="pointer">
-            </div>
+
           </div> <!-- content     -->
         </div> <!-- container -->
+        <div id="moveDown" class="pointer">
+          <img src="img/pointer2.png" alt="pointer">
+        </div>
       </div> <!-- section2 -->
     </div>  <!-- section -->
 <!-- section3 -->
@@ -105,10 +104,10 @@
 
             <section class="section__text section3__text">
               <p class="section3__p section3__p1">
-                Конкурентные преимущества отпаривателя BIZOND, которые
+                Конкурентные преимущества отпаривателя BIZOND,
               </p>
               <p class="section3__p section3__p2">
-                выделяют его среди других аналогов
+                которые выделяют его среди других аналогов
               </p>
             </section>
 
@@ -125,19 +124,20 @@
 			<div class="block block1">
 				<div class="block-img block-img1"></div>
 				<p class="block__p">
-				Миниатюрный дизайн для использования в путешествиях
+				Портативность для использования в путешествиях.
 				</p>
 			</div>
 			<div class="block block2">
 				<div class="block-img block-img2"></div>
 				<p class="block__p">
-				Подача сухого пара под высоким давлением
+				Функция подачи сухого пара предотвращает появление пятен от воды.
 				</p>
 			</div>
 			<div class="block block3">
 				<div class="block-img block-img3"></div>
 				<p class="block__p">
-				Герметичный корпус с системой охлаждения
+				 Благодаря уникальному нано-фильтру
+         может использовать водопроводную воду.
 				</p>
 			</div>
 		</div>
@@ -146,19 +146,19 @@
 			<div class="block block4">
 				<div class="block-img block-img4"></div>
 				<p class="block__p">
-				Функция вертикальной и горизонтальной глажки
+				Подходит как для вертикальной, так и горизонтальной глажки.
 				</p>
 			</div>
 			<div class="block block5">
 				<div class="block-img block-img5"></div>
 				<p class="block__p">
-				 Разглаживает вещи без капель и пятен
+				 Эффективно разглаживает любые виды ткани.
 				</p>
 			</div>
 			<div class="block block6">
 				<div class="block-img block-img6"></div>
 				<p class="block__p">
-				Готовность к работе за  25 секунд
+				 Готовность к использованию всего за 25 секунд.
 				</p>
 			</div>
 		</div>
@@ -168,11 +168,12 @@
 </div>  <!-- effect -->
 
 </section>
-<div id="moveDown" class="pointer">
-  <img src="img/pointer2.png" alt="pointer">
-</div>
+
           </div>  <!-- content -->
         </div> <!-- container -->
+        <div id="moveDown" class="pointer">
+          <img src="img/pointer2.png" alt="pointer">
+        </div>
       </div> <!-- section3 -->
     </div>  <!-- section -->
 <!-- section4 -->
@@ -185,10 +186,10 @@
 
           <section class="section__text section4__text">
             <p class="section4__p section4__p1">
-              Портативный отпариватель BIZOND
+              Портативность. Быстрота. Эффективность.
             </p>
             <p class="section4__p section4__p2">
-              обеспечивает безупречный результат
+               Отпариватель Bizond идеально подходит для ежедневного использования
             </p>
           </section>
           <section class="slick-slide-plugin4" onselectstart="return false" onmousedown="return false">
@@ -200,7 +201,9 @@
                   <img src="img/bg4-1.png" alt="img">
                 </div>
                   <div class="fade4__img ">
+                    <div class="fade4__img-round">
                     <img class="fade4__img1" src="img/img4-1.png" alt="img">
+                  </div>
                   </div>
                 <div class="fade4__text">
                   <h2>1</h2>
@@ -214,7 +217,9 @@
                   <img src="img/bg4-2.png" alt="img">
                 </div>
                   <div class="fade4__img ">
-                    <img class="fade4__img1" src="img/img4-2.png" alt="img">
+                    <div class="fade4__img-round">
+                    <img class="fade4__img2" src="img/img4-2.png" alt="img">
+                    </div>
                   </div>
                 <div class="fade4__text">
                   <h2>
@@ -227,21 +232,23 @@
                 </div>
               </div>
               <div class="fade4__slide__item">
+
                 <div class=" fade4__bg">
                   <img src="img/bg4-3.png" alt="img">
                 </div>
                   <div class="fade4__img ">
-                    <img class="fade4__img1" src="img/img4-3.png" alt="img">
+                    <div class="fade4__img-round">
+                    <img class="fade4__img3" src="img/img4-3.png" alt="img">
+                    </div>
                   </div>
                 <div class="fade4__text">
                   <h2>
                     3
                   </h2>
                   <p>
-                    Функция вертикального
-                    отпаривания позволит
-                    разгладить вещи мгновенно,
-                    не снимая с тремпеля.
+                    Функция вертикального отпаривания
+                    позволит разгладить ваши вещи мгновенно,
+                     не снимая с плечиков.
                   </p>
                 </div>
               </div>
@@ -250,17 +257,17 @@
                   <img src="img/bg4-4.png" alt="img">
                 </div>
                   <div class="fade4__img ">
-                    <img class="fade4__img1" src="img/img4-4.png" alt="img">
+                    <div class="fade4__img-round">
+                    <img class="fade4__img4" src="img/img4-4.png" alt="img">
+                  </div>
                   </div>
                 <div class="fade4__text">
                   <h2>
                     4
                   </h2>
                   <p>
-                    Благодаря своей мобильности,
-                    горизонтальное
-                    отпаривание не проблема
-                    для BIZOND.
+                    Благодаря своей функциональности,
+                     горизонтальное отпаривание не проблема для Bizond.
                   </p>
                 </div>
               </div>
@@ -269,14 +276,17 @@
                   <img src="img/bg4-5.png" alt="img">
                 </div>
                   <div class="fade4__img ">
-                    <img class="fade4__img1" src="img/img4-5.png" alt="img">
+                    <div class="fade4__img-round">
+                    <img class="fade4__img5" src="img/img4-5.png" alt="img">
+                  </div>
                   </div>
                 <div class="fade4__text">
                   <h2>
                     5
                   </h2>
                   <p>
-                    Прекрасный результат!  Рубашка идеально разглажена.
+                    Портативный отпариватель Bizond
+                    обеспечивает безупречный результат.
                   </p>
                 </div>
               </div>
@@ -286,6 +296,9 @@
 
         </div>     <!-- content -->
       </div> <!-- container -->
+      <div id="moveDown" class="pointer">
+        <img src="img/pointer2.png" alt="pointer">
+      </div>
     </div> <!-- section4 -->
   </div>  <!-- section       -->
 <!-- section5 -->
@@ -298,10 +311,10 @@
 
           <section class="section__text section5__text">
             <p class="section5__p section5__p1">
-              Портативный отпариватель BIZOND – это быстрая
+              Выберите то, что Вам больше подходит.
             </p>
             <p class="section5__p section5__p2">
-              и безопасная глажка любых видов тканей
+              Мы свой выбор уже сделали
             </p>
           </section>
 
@@ -334,11 +347,11 @@
             <tbody class="tbody">
               <tr class="tr1">
                 <td><span>Характеристики</span></td>
-                <td>Отпариватель BIZOND</td>
-                <td>Тип отпаривателя 1 </td>
-                <td>Тип отпаривателя 2 </td>
-                <td>Стационарный отпариватель</td>
-                <td>Утюг</td>
+                <td><span>Отпариватель BIZOND</span></td>
+                <td><span>Тип отпаривателя <br> 1</span></td>
+                <td><span>Тип отпаривателя <br> 2</span></td>
+                <td><span>Стационарный отпариватель</span></td>
+                <td><span>Утюг</span></td>
               </tr>
               <tr>
                 <td><span>Сухой пар</span> (существенная экономия
@@ -377,7 +390,7 @@
                 <td><div></div></td>
               </tr>
               <tr>
-                <td><span>Портативность</span> (удобно использовать в путишествии)</td>
+                <td><span>Портативность</span> (удобно использовать в путешествиях)</td>
                 <td><p></p></td>
                 <td><p></p></td>
                 <td><p></p></td>
@@ -385,8 +398,8 @@
                 <td><div></div></td>
               </tr>
               <tr>
-                <td><span>Горизонтальное разглаживание</span> (удобно
-                  использовать в путешествиях)</td>
+                <td><span>Горизонтальное отпаривание/глажка</span>
+                  (удобно разглаживать на любой поверхности)</td>
                 <td><p></p></td>
                 <td><div></div></td>
                 <td><div></div></td>
@@ -394,8 +407,8 @@
                 <td><p></p></td>
               </tr>
               <tr>
-                <td><span>Вертикальное разглаживание</span> (возможность
-                  разглаживать на плечиках)</td>
+                <td><span>Вертикальное отпаривание/глажка</span>
+                  (возможность разглаживать на плечиках)</td>
                 <td><p></p></td>
                 <td><p></p></td>
                 <td><p></p></td>
@@ -413,11 +426,12 @@
               </tr>
             </tbody>
           </table>
-          <div id="moveDown" class="pointer">
-            <img src="img/pointer2.png" alt="pointer">
-          </div>
+
         </div>  <!-- content     -->
       </div> <!-- container -->
+      <div id="moveDown" class="pointer">
+        <img src="img/pointer2.png" alt="pointer">
+      </div>
     </div> <!-- section5 -->
   </div>  <!-- section       -->
 <!-- section6 -->
@@ -431,18 +445,22 @@
           <section class="section__text section6__text">
 
             <p class="section6__p section6__p1">
-              Отпариватель BIZOND сохранит Ваши вещи,
-              как новые, <br> даже после многочисленных глажек
+              Отпариватель BIZOND сохранит Ваши вещи, как новые, даже после
+                многочисленных глажек.
             </p>
             <p class="section6__p section6__p2">
-              BIZOND сохраняет первоначальный цвет
-              ткани и не разрушает её структуру
+              BIZOND сохраняет первоначальный цвет ткани и не
+              разрушает её структуру благодаря бережному уходу. <br>
+Забудьте о прямом контакте горячей поверхности утюга с вашими   любимыми вещами
             </p>
           </section>
 
           <section class="slick-slide-plugin6" onselectstart="return false" onmousedown="return false">
           <ul>
             <li class="slick-slide-li1">
+            <div class="slick-slide-li1__img-absolute">
+              <img src="img/img6-1.png" alt="img">
+            </div>
           <div class="slick-slider-for">
             <div class="for__slide__item">
                 <div class="for__img">
@@ -499,15 +517,19 @@
       </div>
       </li>
       <li class="slick-slide-li3">
+        <div class="slick-slide-li3__img-absolute">
+          <img src="img/img6-2.png" alt="img">
+        </div>
         <img src="img/slide6-1.png" alt="img">
       </li>
       </ul>
       </section>
+
+        </div> <!-- content     -->
+      </div> <!-- container -->
       <div id="moveDown" class="pointer">
         <img src="img/pointer2.png" alt="pointer">
       </div>
-        </div> <!-- content     -->
-      </div> <!-- container -->
     </div> <!-- section6 -->
   </div>  <!-- section       -->
 <!-- section7 -->
@@ -520,12 +542,13 @@
 
           <div class="section__text section7__text">
             <p class="section7__p section7__p1">
-              Отпариватель BIZOND разглаживает все типы тканей
+              Отпариватель BIZOND разглаживает все типы тканей.
+              Забудьте о гладильных досках.
+
             </p>
             <p class="section7__p section7__p2">
-              Эффективно используйте его также для дезинфекции
-              детских игрушек и <br>мебели, поскольку пар уничтожает
-               до 96 % всех бактерий.
+              Просто плечики или любая поверхность – это все,
+              что необходимо для быстрого устранения складок.
             </p>
           </div>
 
@@ -571,6 +594,7 @@
               <div class="slide__item__line">
               </div>
             </div>
+
             <div class="slide__item">
               <figure>
                 <p><img src="img/slide7-6.png" alt="img"></p>
@@ -579,13 +603,51 @@
               <div class="slide__item__line">
               </div>
             </div>
-          </div>
+
+            <div class="slide__item">
+              <figure>
+                <p><img src="img/slide7-7.png" alt="img"></p>
+                <figcaption>юбка</figcaption>
+              </figure>
+              <div class="slide__item__line">
+              </div>
+            </div>
+
+            <div class="slide__item">
+              <figure>
+                <p><img src="img/slide7-8.png" alt="img"></p>
+                <figcaption>футболка</figcaption>
+              </figure>
+              <div class="slide__item__line">
+              </div>
+            </div>
+
+            <div class="slide__item">
+              <figure>
+                <p><img src="img/slide7-9.png" alt="img"></p>
+                <figcaption>кофта</figcaption>
+              </figure>
+              <div class="slide__item__line">
+              </div>
+            </div>
+
+            <div class="slide__item">
+              <figure>
+                <p><img src="img/slide7-10.png" alt="img"></p>
+                <figcaption>брюки</figcaption>
+              </figure>
+              <div class="slide__item__line">
+              </div>
+            </div>
+
+          </div>  <!-- slick-slide-center -->
           </section>
-          <div id="moveDown" class="pointer">
-            <img src="img/pointer2.png" alt="pointer">
-          </div>
+
         </div> <!-- content -->
       </div> <!-- container -->
+      <div id="moveDown" class="pointer">
+        <img src="img/pointer2.png" alt="pointer">
+      </div>
     </div> <!-- section7 -->
   </div>  <!-- section       -->
 
@@ -599,12 +661,12 @@
 
           <div class="section__text section8__text">
             <p class="section8__p section8__p1">
-              Отпариватель BIZOND разглаживает все типы тканей
+              Функциональность отпаривателя BIZOND намного больше, чем просто глажка.
+Инновационная технология сухого пара обеспечивает глубокое проникновение в волокна ткани.
+
             </p>
             <p class="section8__p section8__p2">
-              Эффективно используйте его также для дезинфекции
-              детских игрушек и <br>мебели, поскольку пар уничтожает
-               до 96 % всех бактерий.
+              Это позволяет освежать, дезинфицировать, устранять запахи и разглаживать даже плотную ткань.
             </p>
           </div>
 
@@ -660,11 +722,12 @@
             </div>
           </div>
           </section>
-          <div id="moveDown" class="pointer">
-            <img src="img/pointer2.png" alt="pointer">
-          </div>
+
         </div> <!-- content -->
       </div> <!-- container -->
+      <div id="moveDown" class="pointer">
+        <img src="img/pointer2.png" alt="pointer">
+      </div>
     </div> <!-- section8 -->
   </div>  <!-- section       -->
 <!-- section9 -->
@@ -674,9 +737,6 @@
         <div class="content">
 
             <div class="header-height">  </div>
-
-          <section class="slick-slide-plugin9" onselectstart="return false" onmousedown="return false">
-
             <div class="section__text section9__text">
               <p class="section9__p section9__p1">
                 инновационные Технологии благодаря которым отпариватель
@@ -685,6 +745,7 @@
                 bizond идеально разгладит вашу одежду
               </p>
             </div>
+          <section class="slick-slide-plugin9" onselectstart="return false" onmousedown="return false">
 
           <div class="slick-slide-fade">
 
@@ -693,16 +754,15 @@
                   <img class="fade__img1" src="img/slide9-1.png" alt="img">
                 </div>
               <div class="fade__text">
+                <h3>Electronic Pump System</h3>
                 <p>
-                  1. Инновационная технология Electronic Pump System
-                  обеспечивает быстрый старт за 25 секунд.
+                  1. Создает мощный сухой пар, который быстро и легко разглаживает любые складки на всех типах тканей.
                 </p>
                 <p>
-                  2. 100 % защита рук от извержения горячего пара.
+                  2. 100% защита от извержения горячей воды и мокрых следов на одежде.
                 </p>
                 <p>
-                  3. Electronic Pump System создает специальный сухой пар,
-                  который быстро и легко разглаживает любые складки на тканях.
+                  3. Обеспечивает быстрый старт, менее чем за 25 сек.
                 </p>
               </div>
             </div>
@@ -712,18 +772,11 @@
                   <img class="fade__img2" src="img/slide9-2.png" alt="img">
                 </div>
               <div class="fade__text">
-                <p>
-                  1. Nano Polymer Filter обеспечивает длительный
-                   срок службы отпаривателя.
-                </p>
-                <p>
-                  2. Nano Polymer Filter защищает нагревательный
-                   элемент отпаривателя от воздействия водопроводной воды.
-                </p>
-                <p>
-                  3. Благодаря Nano Polymer Filter можно использовать
-                  даже обычную воду из-под крана.
-                </p>
+                <h3>Nano Polymer Filter</h3>
+<p>1. Благодаря этой уникальной технологии можно использовать обычную воду из-под крана.</p>
+<p>2. Обеспечивает длительный срок службы отпаривателя.</p>
+<p>3. Защищает нагревательный элемент отпаривателя от воздействия водопроводной воды.</p>
+
               </div>
             </div>
 
@@ -732,30 +785,22 @@
                   <img class="fade__img3" src="img/slide9-3.png" alt="img">
                 </div>
               <div class="fade__text">
-                <p>
-                  1. Корпус устройства полностью герметичен, а вода
-                   находится в специальном контейнере.
-                </p>
-                <p>
-                  2. Технология Cooling Touch Surface препятствует нагреву
-                   ручки отпаривателя в процессе глажки.
-                </p>
-                <p>
-                  3. Автоматическое отключение отпаривателя, если в контейнере
-                   закончилась вода или
-                    отпариватель бездействует дольше 5 минут.
-                </p>
+                <h3>Cooling Touch Surface</h3>
+<p>1. Препятствует нагреву ручки отпаривателя в процессе глажки. </p>
+<p>2. Корпус устройства полностью герметичен, а вода находится в специальном закрытом контейнере.</p>
+<p>3. Автоматическое отключение отпаривателя, если в контейнере закончилась вода
+  или устройство бездействует дольше 5 минут.</p>
+
               </div>
             </div>
-
           </div>
-
           </section>
-          <div id="moveDown" class="pointer">
-            <img src="img/pointer2.png" alt="pointer">
-          </div>
+
         </div> <!-- content -->
       </div> <!-- container -->
+      <div id="moveDown" class="pointer">
+        <img src="img/pointer2.png" alt="pointer">
+      </div>
     </div> <!-- section9 -->
   </div>  <!-- section       -->
 
@@ -800,11 +845,12 @@
                 </ul>
             </div>
           </section>
-          <div id="moveDown" class="pointer">
-            <img src="img/pointer2.png" alt="pointer">
-          </div>
+
       </div> <!-- content -->
     </div> <!-- container -->
+    <div id="moveDown" class="pointer">
+      <img src="img/pointer2.png" alt="pointer">
+    </div>
   </div> <!-- section10 -->
 </div>  <!-- section       -->
 <!-- section11 -->
@@ -846,11 +892,12 @@
           </ul>
         </div>
       </section>
-      <div id="moveDown" class="pointer">
-        <img src="img/pointer2.png" alt="pointer">
-      </div>
+
     </div> <!-- content -->
   </div> <!-- container -->
+  <div id="moveDown" class="pointer">
+    <img src="img/pointer2.png" alt="pointer">
+  </div>
 </div> <!-- section11 -->
 </div>  <!-- section       -->
 <!-- section12 -->
@@ -872,24 +919,26 @@
               <p>Инновационные технологии для глажки вещей доступны
                  уже сейчас. Закажите отпариватель для одежды BIZOND,
                 и наслаждайтесь своими любимыми вещами без складок.</p>
-                <div class="bt12">заказать</div>
+                <div class="bt12">
+                заказать
+                </div>
                 <ul>
                   <li><p class="section12__text__p">
-                    Гарантия на возврат – 14 дней.
+                    1. Гарантия на возврат – 14 дней.
                   </p></li>
                   <li><p class="section12__text__p">
-                    Официальный срок службы – 1 год.
+                    2. Гарантийный срок службы – 12 месяцев.
                   </p></li>
                   <li><p class="section12__text__p">
-                    Замена устройства в случае неисправности.
+                    3. Замена устройства в случае неисправности, в период гарантийного срока службы.
                   </p></li>
                 </ul>
-                <p>Благодаря специальному нано-полимерному фильтру,
+                <!-- <p>Благодаря специальному нано-полимерному фильтру,
                   установленному в отпаривателе BIZOND,  для глажки можно использовать
                    даже водопроводную воду. НО! Обратите внимание, если вода в Вашем
                    регионе содержит большое количество железа, то для увеличения срока
                    эксплуатации отпаривателя рекомендуем
-                  использовать только очищенную или дистиллированную воду. </p>
+                  использовать только очищенную или дистиллированную воду. </p> -->
           </div>
         </section>
       </div> <!-- content -->
@@ -917,7 +966,7 @@
               <h3>Design academy</h3>
             </div>
           </div>
-        </div>
+        </div> <!-- footer-bg -->
 
       </footer>
     </div>

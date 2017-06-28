@@ -8,7 +8,7 @@ paddingTop: '0px',
 paddingBottom: '0px',
 navigation: true,
 navigationPosition: 'left',
-navigationTooltips: ['first Slide', 'secondSlide', '3 Slide','4 Slide'],
+navigationTooltips: ['1 Slide', '1 Slide', '3 Slide','4 Slide'],
 afterRender: function(){
 $('#fp-nav').css({"opacity": 0});
 },
@@ -53,9 +53,9 @@ $('#element').plate({
   	// inverse animation
   	inverse: false,
 	  // transformation perspective in pixels
-	  perspective: 1000,
+	  perspective: 700,
 	  // maximum rotation in degrees
-	  maxRotation: 5,
+	  maxRotation: 3,
 	  // duration in milliseconds
   	animationDuration: 200
   	});
