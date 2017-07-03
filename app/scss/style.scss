@@ -131,11 +131,11 @@ ul li a.active span {
 	width: 120px;
 }
 .tel-bt {
-	width: 340px;
+	max-width: 340px;
 	display: flex;
 	justify-content: space-between;
   @media screen and ( max-width: 480px) {
-    width: 285px;
+    max-width: 285px;
   }
 }
 .tel {
@@ -149,6 +149,9 @@ ul li a.active span {
 }
 .tel p:first-child {
 	padding-bottom: 15px;
+  @media screen and ( max-width: 480px) {
+  padding-bottom: 10px;
+  }
 }
 
 .bt {

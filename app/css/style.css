@@ -154,7 +154,7 @@ body {
   .header .logo {
     width: 120px; }
   .header .tel-bt {
-    width: 340px;
+    max-width: 340px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -167,7 +167,7 @@ body {
     justify-content: space-between; }
     @media screen and (max-width: 480px) {
       .header .tel-bt {
-        width: 285px; } }
+        max-width: 285px; } }
   .header .tel {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -178,6 +178,9 @@ body {
     letter-spacing: 1px; }
   .header .tel p:first-child {
     padding-bottom: 15px; }
+    @media screen and (max-width: 480px) {
+      .header .tel p:first-child {
+        padding-bottom: 10px; } }
   .header .bt {
     background: -webkit-gradient(linear, left bottom, right top, from(#95dadf), to(#49bce5));
     background: -webkit-linear-gradient(left bottom, #95dadf, #49bce5);
