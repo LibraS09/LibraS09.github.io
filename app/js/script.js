@@ -1,4 +1,15 @@
 $(document).ready(function() {
+
+	function beginAnime (section, anime1, no1,  anime2, no2) {
+		$(section+"__p1").animate({opacity: 1}, 100, 'linear').removeClass(no1).addClass(anime1);
+		$(section+"__p2").animate({opacity: 1}, 300, 'linear').removeClass(no2).addClass(anime2);
+	}
+	function endAnime (section, anime1, no1, anime2, no2) {
+		$(section+"__p1").removeClass(anime1).addClass(no1).css({"opacity": 0});
+		$(section+"__p2").removeClass(anime2).addClass(no2).css({"opacity": 0});
+	}
+
+if ($(window).width() >= 992) {
 $('#fullpage').fullpage({
 // scrollOverflow: true,
 autoScrolling: true,
@@ -13,24 +24,12 @@ afterRender: function(){
 $('#fp-nav').css({"opacity": 0});
 },
 afterLoad: function(anchorLink, index){
-	function beginAnime (section, anime1, no1,  anime2, no2) {
-		$(section+"__p1").animate({opacity: 1}, 100, 'linear').removeClass(no1).addClass(anime1);
-		$(section+"__p2").animate({opacity: 1}, 300, 'linear').removeClass(no2).addClass(anime2);
-	};
-	function endAnime (section, anime1, no1, anime2, no2) {
-		$(section+"__p1").removeClass(anime1).addClass(no1).css({"opacity": 0});
-		$(section+"__p2").removeClass(anime2).addClass(no2).css({"opacity": 0});
-	};
 	if (index == 1) {
-		$(".section1__h1").animate({opacity: 1}, 100, 'linear').removeClass("no-anime50").addClass("anime03");
-		beginAnime (".section1", "anime08", "no-anime70", "anime13", "no-anime70");
 		$('#fp-nav').animate({opacity: 0}, 500, 'linear');
 	} else {
-		$(".section1__h1").removeClass("anime03").addClass("no-anime50").css({"opacity": 0});
-		endAnime (".section1", "anime08", "no-anime70", "anime13", "no-anime70");
 		$('#fp-nav').animate({opacity: 1}, 1000, 'linear');
-	};
-	for (var i = 2; i <= 11; i++) {
+	}
+	for (var i = 1; i <= 11; i++) {
 		if (index == i) {
 			beginAnime (".section"+i, "anime03", "no-anime50", "anime08", "no-anime50");
 		} else {
@@ -41,12 +40,19 @@ afterLoad: function(anchorLink, index){
 		$('.header-fixed').slideUp(500);
 	} else {
 		$('.header-fixed').slideDown(500);
-	};
+	}
+	if (index == 4) {
+		// slide for 4------------------
+		$('.slick-slide-fade4').slick('slickGoTo', 0, true);
+		$('.slick-slide-fade4').slick('slickPlay', true);
+		// $('.slick-slide-fade4').slick('slickSetOption','autoplay', true, true);
+	}
+	 if (( index == 3) || ( index == 5)) {
+		 $('.slick-slide-fade4').slick('slickGoTo', 0, true);
+		 $('.slick-slide-fade4').slick('slickPause', true);
+		//  $('.slick-slide-fade4').slick('slickSetOption','autoplay', false, true);
+	}
 }
-});
-
-$(document).on('click', '#moveDown', function(){
-$.fn.fullpage.moveSectionDown();
 });
 
 $('#element').plate({
@@ -59,6 +65,12 @@ $('#element').plate({
 	  // duration in milliseconds
   	animationDuration: 200
   	});
+
+}
+$(document).on('click', '#moveDown', function(){
+$.fn.fullpage.moveSectionDown();
+});
+
 // slide for 7 8------------------
 
 $('.slick-slide-center').slick({
@@ -72,7 +84,7 @@ $('.slick-slide-center').slick({
     {
       breakpoint: 768,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
         centerPadding: '0px',
         slidesToShow: 3
@@ -81,9 +93,9 @@ $('.slick-slide-center').slick({
     {
       breakpoint: 480,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
-        centerPadding: '0px',
+        centerPadding: '20%',
         slidesToShow: 1
       }
     }
@@ -91,18 +103,18 @@ $('.slick-slide-center').slick({
 });
 // slide for 4------------------
 $('.slick-slide-fade4').slick({
-  dots: false,
-  infinite: true,
-	arrows: false,
-	pauseOnHover: false,
-  speed: 500,
-  fade: true,
-  cssEase: 'linear',
-	autoplay: true,
-  autoplaySpeed: 5000
+dots: true,
+infinite: true,
+arrows: false,
+pauseOnHover: false,
+speed: 500,
+fade: true,
+cssEase: 'linear',
+autoplay: true,
+autoplaySpeed: 5000
 });
+ $('.slick-slide-fade4').slick('slickPause', true);
 // slide for 9------------------
-
 $('.slick-slide-fade').slick({
   dots: true,
   infinite: true,
@@ -134,4 +146,6 @@ $('.slick-slider-nav').on('beforeChange', function(event, slick, direction){
   $('.slick-slide-li3').animate({opacity: 0.7}, 250)
 	.animate({opacity: 1}, 250);
 });
+
+
 });
