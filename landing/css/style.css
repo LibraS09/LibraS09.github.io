@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e6e4f3;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #232642;
+}
+a {
+    text-decoration: none;
+    color: #232642;
+}
+ul {
+    list-style: none;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    min-width: 960px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+/* section1 */
+.section1 {
+    position: relative;
+    overflow: hidden;
+    padding-top: 72px;
+    padding-bottom: 228px;
+}
+.section1::before {
+    content: '';
+    background-image: url(../img/bg1.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100% 100%;
+    display: block;
+    position: absolute;
+    width: 100%;
+    min-width: 2000px;
+    height: 1300px;
+    z-index: -1;
+    left: 10%;
+    top: -17%;
+}
+.points {
+    position: absolute;
+    top: 72px;
+    left: calc(50% - 125px);
+}
+.section1-header {
+    margin-bottom: 212px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 220px;
+}
+.section1-menu li {
+    margin-left: 50px;
+    display: inline-block;
+}
+.section1-menu a {
+    color: #fff;
+    font-weight: 800;
+    font-style: 18px;
+    line-height: 1;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+}
+.section1-menu a:hover {
+    border-bottom: 2px solid #fff;
+    
+}
+.section1-caption {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.5;
+    margin-bottom: 150px;
+}
+@keyframes f {
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+.fadeUp {
+    animation-name: f;
+    animation-duration: 1s;
+    opacity: 0;
+    transform: translateY(2rem); 
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s
+}
+.started {
+    display: inline-flex;
+    align-items: center;
+}
+.started-text {
+    font-size: 18px;
+    font-weight: 800;
+}
+@keyframes floating {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {  
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+.started-arrow {
+    width: 42px;
+    height: auto;
+    margin-left: 85px;
+    animation: floating 2s ease infinite;
+}
+.form-block {
+    align-items: flex-end;
+}
+.form-block-img {
+    padding-left: 30px;
+    padding-right: 30px;  
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.section1-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 25px;
+}
+.btn {
+    padding: 15px 22px;
+    border-radius: 20px; 
+    background-color: #eaedf3; 
+    transition: 0.5s;  
+    border: none;
+    font-weight: 800;
+}
+.form-btn-group .btn:hover {
+    background-color: #d2d8e3; 
+    box-shadow: 0 5px 5px 1px #e8ebf0; 
+    color: #fff;
+}
+.btn-generate {  
+    background-color: #fa6f44;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0 12px 10px 1px #fcd6ca;
+}
+.btn-generate:hover {
+    color: #232642;
+    box-shadow: 0 12px 10px 1px #d2d8e3;
+}
+.form-btn-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.w-100 {
+    width: 100%;
+}
+.form-btn-group .btn {
+    margin-bottom: 23px;
+}
+.section1-form .form-btn-group .active {
+    background-color: #f57b55;
+    color: #fff;
+}
+
+.form-input-block input,
+.form-input-block select {
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    outline: none;
+}
+.form-input-block select  {
+    /* -moz-appearance: none;
+    -webkit-appearance: none; */
+    border: 1px solid #fff;
+}
+.section1-form button:focus {
+    outline: 0;
+}
+.form-input-block input::placeholder,
+.form-input-block select {
+    color: #202020;
+    font-weight: 700;
+}
+
+.form-input-block li {
+    border-bottom: 2px solid #dadde4;
+    margin-bottom: 25px;
+}
+.input-label {
+    color: #dadde1;
+    font-weight: 800;
+}
+
+/* section2 */
+.section2 {
+    overflow: hidden;
+    position: relative;
+    padding-top: 280px;
+    margin-top: -280px;
+    background-color: #dddaf4;
+    background-clip: content-box;
+    color: #232642;
+}
+.section2-pb {
+    padding-bottom: 150px;
+}
+.section2::before {
+    content: '';
+    position: absolute;
+    background-image: url(../img/bg2.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 100%;
+    display: block;
+    width: 100%;
+    min-width: 2000px;
+    height: 1000px;
+    top: -400px;
+    left: -300px;
+    z-index: -2;
+}
+.points2 {
+    position: absolute;
+    right: 0;
+    top: 280px;
+    transform: rotate(90deg)
+}
+.section2-caption {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 100px;
+}
+.section2-text {
+    font-size: 19px;
+    margin-bottom: 30px; 
+}
+.more {
+    color: #232642;
+    padding: 25px 115px;
+    border: 1px solid #232642;
+    border-radius: 30px;
+    display: inline-block;
+    font-weight: 800;
+}
+.quote-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.quote {
+    max-width: 400px;
+    width: 80%;
+}
+/* section3 */
+.section3 {
+    padding-top: 150px;
+    color: #232642;
+    height: 100vh;
+}
+.section3-img-block {
+    padding: 0 15%;
+    position: relative;
+}
+.section3-img {
+    transform: rotateY(180deg);
+}
+.section3-caption {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 70px;
+}
+.section3-text {
+    font-size: 19px;
+}
+.section2-text p,
+.section3-text p {
+    padding-bottom: 45px;
+}
+.section3-block {
+    position: relative;
+    overflow-y: auto;
+    height: 70vh;
+}
+.section3-text-block {
+    padding-left: 40px;
+    padding-right: 100px;
+    /* position: absolute; */
+    top: 0;
+}
+.section4 {
+    height: 1000px;   
+}
+/* .fixed {
+    position: fixed;
+    top: 150px;
+    z-index: 100;
+} */
+
+@media (min-width: 1367px) {
+    .container {  
+        max-width: 1110px;
+    }
+}
+@media (min-width: 1920px) {
+    .container {  
+        max-width: 1367px;
+    }
+}
