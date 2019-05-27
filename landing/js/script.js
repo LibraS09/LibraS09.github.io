@@ -26,12 +26,19 @@ window.onscroll = function () {
    var section3Bottom = section3.getBoundingClientRect().bottom + pageYOffset;
    var h = imgElem.clientHeight;
   
-   var top = Math.round(section3.getBoundingClientRect().top * -1);
+   // var top = Math.round(section3.getBoundingClientRect().top * -1);
+   var top = section3.getBoundingClientRect().top * -1;
+
+console.log(section3.getBoundingClientRect().bottom );
+console.log(document.documentElement.clientHeight);
 
    if ( window.pageYOffset > section3Top && window.pageYOffset < section3Bottom-h-150) {
       imgElem.style.transform = "rotateY(180deg) translateY("+top+"px)";
       section3Text.style.transform = "translateY("+top*-2+"px)";
    } 
+   if (section3.getBoundingClientRect().bottom>document.documentElement.clientHeight) {
+      section3Text.style.transform = "translateY("+0+"px)";
+   }
 
    if (top > 0) {
       var bgcolor = "rgb(" + (221 - top / r) + "," + (218 - top / g) + "," + (244 - top / b) + ")";

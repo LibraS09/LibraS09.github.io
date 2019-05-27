@@ -293,10 +293,10 @@ ul {
     padding-top: 150px;
     color: #232642;
     height: 100vh;
+    overflow: hidden;
 }
 .section3-img-block {
     padding: 0 15%;
-    position: relative;
 }
 .section3-img {
     transform: rotateY(180deg);
@@ -321,17 +321,11 @@ ul {
 .section3-text-block {
     padding-left: 40px;
     padding-right: 100px;
-    /* position: absolute; */
     top: 0;
 }
 .section4 {
     height: 1000px;   
 }
-/* .fixed {
-    position: fixed;
-    top: 150px;
-    z-index: 100;
-} */
 
 @media (min-width: 1367px) {
     .container {  
