@@ -57,30 +57,12 @@ body {
 .accordion-section5::before {
     background-image: url('../img/bg_section5.jpg');
 }
-
-/* .accordion-section1 {
-    background-image: url('../img/bg_section1.jpg');
-}
-.accordion-section2 {
-    background-image: url('../img/bg_section2.jpg');
-}
-.accordion-section3 {
-    background-image: url('../img/bg_section3.jpg');
-}
-.accordion-section4 {
-    background-image: url('../img/bg_section4.jpg');
-}
-.accordion-section5 {
-    background-image: url('../img/bg_section5.jpg');
-} */
 .accordion-section {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    
 }
 .accordion-section::after {
     content: "";
@@ -91,14 +73,7 @@ body {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
 }
-
 .active.accordion-section::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-color: rgba(255, 255, 255, 0.8); 
 }
 .accordion-title {
@@ -111,14 +86,13 @@ body {
     font-family: "Gotham Pro Black";
     font-size: 24px;
     font-weight: 900;
-    line-height: normal;
+    line-height: 0.9;
     overflow: hidden;
     z-index: 10;
 }
 .active .accordion-title {
-    padding: 31px 18px;   
+    padding: 30px 18px;   
     color: #363636;
-    font-weight: 900; 
 }
 .collapse {
     max-width: 320px;
@@ -135,19 +109,18 @@ body {
 }
 .accordion-content {
     padding-left: 18px;  
-    padding-right: 50px;
+    padding-right: 45px;
     padding-bottom: 33px;
-    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 300;
-    line-height: 1.5;
+    line-height: 1.68;
     text-align: left;
-    color: #363636;
 }
 .accordion-content__title {
     font-weight: 900;
-    line-height: 1.7;
+    line-height: 1.6;
     font-size: 11.8px;
+    padding-bottom: 5px;
 }
 .accordion-content__list {
     list-style: none;
@@ -165,20 +138,16 @@ body {
     padding-left: 23px;
     position: relative;
 }
-.comments-inside {
-    padding-top: 35px;
-}
 .comments-content {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 500;
     line-height: 1.5;
-    color: #363636;
 }
 .comments-title {
     font-family: "Gotham Pro Black";
-    padding-bottom: 23px;  
+    padding-top: 35px;
+    padding-bottom: 20px;  
     font-size: 24px;
     font-weight: 900;
     line-height: normal;
@@ -209,7 +178,6 @@ body {
     filter: grayscale(0);
     opacity: 1;
 }
-
 .img1 {
     width: 77px;
     height: 38px;
@@ -228,29 +196,28 @@ body {
 }
 .img5 {
     width: 74px;
-  height: 10px;
+    height: 10px;
 }
 .img6 {
     width: 66px;
-  height: 16px;
+    height: 16px;
 }
 .img7 {
     width: 59px;
-  height: 35px;
+    height: 35px;
 }
 .img8 {
     width: 38px;
-  height: 38px;
+    height: 38px;
 }
 .img9 {
     width: 89px;
     height: 23px;
 }
-
 .btn-block {
     width: 100%;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 20px;
 }
 .btn {
@@ -258,12 +225,13 @@ body {
     outline: none;
     padding: 15px 26px;
     background-color: #1c7fff;
-    color: #ffffff;
+    color: #fff;
     font-family: "Gotham Pro Black";
     font-size: 11px;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1.1px;
+    user-select: none;
 }
 /* Popup */
 .popup {
@@ -320,19 +288,19 @@ body {
         display: flex;
         height: 440px;
     }
-    
     .active .accordion-title {
         font-size: 36px;
-        font-weight: 900;
         color: #363636;
-        padding: 50px 15px 35px 45px;
+        padding: 60px 15px 35px 45px;
         margin: 0;
         max-width: 100%;
         text-align: left;
     }
+    .accordion-section:not(.active) {
+        width: 117px;
+    }
     .accordion-section:not(.active) .accordion-title {
         position: relative; 
-        width: 84px;
         height: 100%;
         flex-shrink: 0;
         font-size: 36px;
@@ -343,11 +311,14 @@ body {
         position: absolute;
         width: 440px;
         transform: rotate(-90deg); 
-        bottom: 190px;
-        left: -190px;  
+        bottom: 200px;
+        left: -183px;  
     }
     .active {
         flex-grow: 1;
+    }
+    .accordion-title {
+        max-width: 100%; 
     }
     .collapse {
         max-width: 100%;
@@ -365,7 +336,6 @@ body {
     .comments-inside {
         display: flex;
         flex-wrap: wrap;
-        padding-top: 30px;
     }
     .comments-content {
         flex: 0 0 41.66666%;
@@ -375,7 +345,7 @@ body {
         text-align: left; 
     }
     .comments-title {
-        padding-top: 10px;
+        padding-top: 40px;
         font-size: 36px;
     }
     .comments-content span {
@@ -384,15 +354,13 @@ body {
     .partners {
         padding-left: 30px; 
         flex: 0 0 58.333333%;
-        max-width: 58.333333%;
-        
+        max-width: 58.333333%;  
    }
     .partners-list {
         margin-left: 0; 
     }
-
    .partners li {
-       padding: 0 15px 40px;
+       padding: 30px 15px 10px;
    }
     .img1 {
         width: 109px;
@@ -432,11 +400,13 @@ body {
     }
     .btn-block {
         padding-top: 0;
-        margin-top: -10px;
     }
     .btn {
         padding: 20px 36px;
         font-size: 12px;
+    }
+    .accordion-content__list li::before {
+        top: 5px;
     }
  }
  @media (min-width: 1900px) { 
@@ -446,66 +416,62 @@ body {
         padding-right: 20px;
     }
     .accordion-wrap {
-        max-width: 100%;
-        width: 100%;  
+        max-width: none;
+        width: auto;  
         padding: 0;
-        margin: 0 auto;
-       
+        margin: 0 auto; 
     }
     .accordion {
-        margin-left: -125px;
-        margin-right: -125px;
+        margin-left: -150px;
+        margin-right: -150px;
         height: 682px;
-        background-image: url('../img/bg.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
     }
     .accordion-section {
-        transform: skewX(-20deg);
+        transform: skewX(-15deg);
     }
     .active .accordion-title {
         font-size: 55px;    
-        padding: 133px 15px 35px 110px;
+        padding: 130px 15px 45px 110px;
         text-align: left;
         margin: 0;
     }
     .accordion-content {
         padding: 0 15px 25px 190px;
         font-size: 16px; 
-        line-height: 3;
+        line-height: 2.8;
     }
     .accordion-content__title {
         font-size: 20px;
     } 
+    .accordion-section:not(.active) {
+        width: 300px;
+    }
+    .accordion-section1:not(.active),
+    .accordion-section5:not(.active) {
+        width: 400px; 
+    }
     .accordion-section:not(.active) .accordion-title {
-        width: 250px;
-        font-size: 56px;
+        font-size: 70px;
         white-space: normal;
     }
-    .accordion-section1:not(.active) .accordion-title,
-    .accordion-section5:not(.active) .accordion-title {
-        width: 500px; 
-    }
-   
     .accordion-section:not(.active) .rotate { 
-        left: -100px; 
-        bottom: 300px; 
+        left: -90px; 
+        bottom: 250px; 
     }
     .accordion-section1:not(.active) .rotate { 
-        left: -10px;    
+        left: 10px;    
     }
     .active .accordion-title,
     .active .accordion-content  {
-        transform: skewX(20deg);
+        transform: skewX(15deg);
     }
     .accordion-section::before {
-        transform: skewX(20deg);
+        transform: skewX(15deg);
         left: -130px;
         right: -130px;
     }
     .comments-inside {
-        padding-top: 67px;
+        padding-top: 10px;
     }
     .comments-content {
         flex: 0 0 33.333333%;
@@ -514,21 +480,20 @@ body {
         line-height: 1.83;
     }
     .comments-title {
-        padding-top: 15px;
+        padding-top: 63px;
         font-size: 50px;
         padding-bottom: 27px;
     }
     .partners {
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
-        
         padding-left: 35px; 
     }
     .partners-list {
         margin-right: -20px;
     }
     .partners li {
-        padding: 0 20px 55px;
+        padding: 55px 20px 0;
     }
     .partners img {
         filter: grayscale(0);
@@ -571,11 +536,15 @@ body {
         height: 43px;
     }
     .btn-block {
-        margin-top: -120px;
+        margin-top: -73px;
         text-align: left;
+        padding-top: 0;
     }
     .btn {
         padding: 25px 41px;
         font-size: 12px;
+    }
+    .accordion-content__list li::before {
+        top: 13px;
     }
  }
