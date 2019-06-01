@@ -344,7 +344,7 @@ body {
         width: 440px;
         transform: rotate(-90deg); 
         bottom: 190px;
-        left: -180px;  
+        left: -190px;  
     }
     .active {
         flex-grow: 1;
