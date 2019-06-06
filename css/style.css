@@ -9,7 +9,7 @@ body {
   font-family: arial, sans-serif;
   background: url('../img/22-fon-dlya-sayta1.jpg');
 }
-main {
+.wrapper {
   max-width: 960px;
   margin: 0 auto;
   background: #eef1f2;

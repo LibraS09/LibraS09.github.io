@@ -459,4 +459,7 @@ html {
 		flex-direction: row;
 		/* align-items: center; */
 	}
+	.container {
+		max-width: 960px;
+	}
 }
