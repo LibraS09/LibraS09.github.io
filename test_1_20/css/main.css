@@ -237,8 +237,6 @@ ul {
 }
 
 .slider-img-wrap {
-  -webkit-transform: rotate(1.5deg);
-          transform: rotate(1.5deg);
   margin: 0 auto;
   width: 249.67px;
 }
@@ -276,6 +274,9 @@ ul {
   height: 368.56px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transform: rotate(1.5deg);
+          transform: rotate(1.5deg);
+  border: 1px solid #fff;
 }
 
 @media (min-width: 414px) {

@@ -143,7 +143,8 @@ ul {
      }
 }
 &-img-wrap {
-    transform: rotate(1.5deg);
+    // transform: rotate(1.5deg);
+    // border: 1px solid #fff;
     margin: 0 auto;
     width: 249.67px;
     @media (min-width: $breakpoint-s) {
@@ -167,7 +168,8 @@ ul {
     width: 249.67px;
     height: 368.56px;
     object-fit: cover;
-    
+    transform: rotate(1.5deg);
+    border: 1px solid #fff;
     @media (min-width: $breakpoint-s) {
         width: 273px;
         height: 403px;
