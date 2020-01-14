@@ -1,0 +1,412 @@
+@import 'vars';
+@import 'fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    cursor: url(../images/Ellipse.png), auto;
+}
+a {
+    text-decoration: none;
+    color: $main-color-text;
+}
+ul {
+    list-style: none;
+}
+.container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    @media (min-width: $breakpoint-s) {
+        width: 366px + 40px;
+     }
+     @media (min-width: $breakpoint-m) {
+        width: 704px + 40px;
+     }
+     @media (min-width: $breakpoint-l) {
+        width: 960px + 40px;
+     }
+    @media (min-width: $breakpoint-xl) {
+        width: 1345px + 40px;
+     }
+}
+.header-page {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+.header-content {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: $breakpoint-s) {
+        padding-top: 30px;
+    }
+    @media (min-width: $breakpoint-m) {
+        padding-top: 25px;
+     }
+     @media (min-width: $breakpoint-l) {
+        padding-top: 32px;
+    }
+    @media (min-width: $breakpoint-xl) {
+        padding-top: 35px;
+     }
+}
+.logo {
+    font-family: 'GT America';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 2.5px;
+    @media (min-width: $breakpoint-m) {
+        letter-spacing: 4px;
+     }
+     @media (min-width: $breakpoint-l) {
+        letter-spacing: 3px;
+    }
+}
+.main-nav {
+    display: none;
+    @media (min-width: $breakpoint-m) {
+        display: block;
+        padding-top: 4px;
+     }
+}
+.main-menu__item {
+    font-family: 'TT Travels';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: right;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    @media (min-width: $breakpoint-xl) {
+        font-size: 11px;
+     }
+}
+.mob-menu {
+    width: 20px;
+    padding-top: 5px;
+    &__item {
+        width: 100%;
+        height: 1px;
+        background: rgba(40, 40, 40, 0.57);
+    }
+    &__item:first-child {
+        margin-bottom: 7px;
+    }
+    @media (min-width: $breakpoint-m) {
+        display: none;
+     }
+}
+.slider {
+&-section {
+    overflow: hidden;
+    position: relative;
+    padding-top: 91px;
+    padding-bottom: 27px;
+    @media (min-width: $breakpoint-s) {
+        padding-top: 93px;
+        padding-bottom: 41px;
+    }
+    @media (min-width: $breakpoint-m) {
+        padding-top: 210px;
+        padding-bottom: 125px;
+    }
+    @media (min-width: $breakpoint-l) {
+        padding-top: 89px;
+        padding-bottom: 16px;
+    }
+    @media (min-width: $breakpoint-xl) {
+        padding-top: 74px;
+        padding-bottom: 0px;
+     }
+}   
+&-content {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: $breakpoint-l) {
+        width: 850px;
+     }
+     @media (min-width: $breakpoint-xl) {
+        width: 1200px;
+     }
+}
+&-img-wrap {
+    transform: rotate(1.5deg);
+    margin: 0 auto;
+    width: 249.67px;
+    @media (min-width: $breakpoint-s) {
+        width: 273px;
+    }
+    @media (min-width: $breakpoint-m) {
+        width: 359px;
+    }
+    @media (min-width: $breakpoint-l) {
+        width: 359px;
+    }
+    @media (min-width: $breakpoint-xl) {
+        width: 476px;
+     }
+} 
+&-img {
+    opacity: 0;
+}
+
+&-img__image {
+    width: 249.67px;
+    height: 368.56px;
+    object-fit: cover;
+    
+    @media (min-width: $breakpoint-s) {
+        width: 273px;
+        height: 403px;
+    }
+    @media (min-width: $breakpoint-m) {
+        width: 359px;
+        height: 530px;
+    }
+    @media (min-width: $breakpoint-l) {
+        width: 359px;
+        height: 530px;
+    }
+    @media (min-width: $breakpoint-xl) {
+        width: 476px;
+        height: 702px;
+     }
+}
+&-text-wrap {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 200px;
+    width: 100%;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+}
+
+&-text__slide {
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Schnyder';
+    font-size: 44px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #580300; 
+    mix-blend-mode: darken;
+    @media (min-width: $breakpoint-s) {
+        font-size: 48px; 
+    }
+    @media (min-width: $breakpoint-m) {
+        font-size: 96px;
+        letter-spacing: 8px;
+    }
+    @media (min-width: $breakpoint-l) {
+        font-size: 96px;
+        margin-top: -10px;
+        letter-spacing: 10px;
+    }
+    @media (min-width: $breakpoint-xl) {
+        font-size: 125.5px;
+        letter-spacing: 13px;
+     }
+}
+}
+.vector {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    padding: 0 18px;
+    opacity: 0;
+    @media (min-width: $breakpoint-s) {
+        padding: 0 11px; 
+    }
+    @media (min-width: $breakpoint-m) {
+        max-width: 628px;
+        padding: 0;
+    }
+    @media (min-width: $breakpoint-l) {
+        max-width: 506px;
+    }
+    @media (min-width: $breakpoint-xl) {
+        top: -27px;
+        transform: translateX(-244px);
+        max-width: 608.38px;
+     }
+   
+}
+.bg-text {
+    position: absolute;
+    font-family: 'Schnyder';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    -webkit-text-fill-color: #fff; 
+    -webkit-text-stroke: 1px #580300;
+    top: calc(50% + 3px);
+    @media (min-width: $breakpoint-m) {
+        font-size: 95px;
+        top: calc(50% + 4px);
+    }
+    @media (min-width: $breakpoint-l) {
+        top: 50%;
+    }
+    @media (min-width: $breakpoint-xl) {
+        font-size: 125px;
+    }
+}
+.bg-text-left {
+    transform: rotate(-1.5deg);
+    left: 0;
+    transform: translate(-213px, -50%) rotate(-1.5deg);
+    @media (min-width: $breakpoint-m) {
+        transform: translate(-396px, -50%) rotate(-1.5deg);
+    }
+    @media (min-width: $breakpoint-l) {
+        transform: translate(-411px, -50%) rotate(-1.5deg);
+    }
+    @media (min-width: $breakpoint-xl) {
+        transform: translate(-548px, -50%) rotate(-1.5deg);
+    }
+}
+.bg-text-right {
+    right: 0;
+    transform: translate(220px, -50%) rotate(1.5deg);
+    @media (min-width: $breakpoint-m) {
+        transform: translate(416px, -50%) rotate(1.5deg);
+    }
+    @media (min-width: $breakpoint-xl) {
+        transform: translate(544px, -50%) rotate(1.5deg);
+    }
+}
+.left-img,
+.right-img {
+    position: absolute;  
+    display: none;
+    animation-delay: 0.5s;
+    opacity: 0;
+    z-index: 20;
+    @media (min-width: $breakpoint-m) {
+        display: block;
+      }
+}
+.left-img {
+    @media (min-width: $breakpoint-m) {  
+       left: calc(50% - 350px);
+       top: 319px - 210px;
+     }
+     @media (min-width: $breakpoint-xl) {
+       left: calc(50% - 494px);
+       top: 125px;
+    }
+    &__image {
+        width: 163px;
+        height: 226px;
+        object-fit: cover;
+        object-position: center;
+        transform: rotate(1.1deg);
+       
+        @media (min-width: $breakpoint-xl) {
+            width: 238px;
+            height: 331px;
+        }
+    }
+}
+.right-img {
+    @media (min-width: $breakpoint-m) {
+       left: calc(50% + 130px);
+       top: 537px - 210px;
+     }
+     @media (min-width: $breakpoint-xl) {
+        left: calc(50% + 167px);
+        top: 495px - 74px;
+    }
+    &__image {
+        width: 234px;
+        height: 162px;
+        object-fit: cover;
+        object-position: center;
+        transform: rotate(2.03deg);
+        
+        @media (min-width: $breakpoint-xl) {
+            width: 345px;
+            height: 238px;
+        }
+    }
+}
+.footer-content {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    @media (min-width: $breakpoint-s) {
+        padding-top: 43px;
+        padding-bottom: 24px;
+    }
+    @media (min-width: $breakpoint-m) {
+        padding-top: 42px;
+        padding-bottom: 32px;
+    }
+    @media (min-width: $breakpoint-l) {
+        padding-top: 23px;
+        padding-bottom: 32px;
+    }
+    @media (min-width: $breakpoint-xl) {
+        padding-top: 13px;
+        padding-bottom: 47px;
+    }
+}
+.soc {
+    display: flex;
+    margin: 0 -4px;
+    &__item {
+        padding: 0 4px;
+        font-family: 'TT Travels';
+        font-size: 12px; 
+        @media (min-width: $breakpoint-xl) {
+            font-size: 11px; 
+         }
+    }
+}
+
+.cursor-text {
+    position: fixed;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.cursor-text_visible {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.anime {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+ 
+  
+

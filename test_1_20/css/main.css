@@ -1,0 +1,658 @@
+@font-face {
+  font-family: 'GT America';
+  src: url("../fonts/GT_America_Bold/GT_America_Bold.woff2") format("woff2"), url("../fonts/GT_America_Bold/GT_America_Bold.woff") format("woff"), url("../fonts/GT_America_Bold/GT_America_Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Travels';
+  src: url("../fonts/TT_Travel/TTTravels-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Schnyder';
+  src: url("../fonts/Schnyder_X_Condensed/Schnyder_X_Cond_XL_Demi.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  cursor: url(../images/Ellipse.png), auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: 414px) {
+  .container {
+    width: 406px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 744px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1385px;
+  }
+}
+
+.header-page {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 414px) {
+  .header-content {
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-content {
+    padding-top: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-content {
+    padding-top: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-content {
+    padding-top: 35px;
+  }
+}
+
+.logo {
+  font-family: 'GT America';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 2.5px;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    letter-spacing: 4px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    letter-spacing: 3px;
+  }
+}
+
+.main-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: block;
+    padding-top: 4px;
+  }
+}
+
+.main-menu__item {
+  font-family: 'TT Travels';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: right;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1440px) {
+  .main-menu__item {
+    font-size: 11px;
+  }
+}
+
+.mob-menu {
+  width: 20px;
+  padding-top: 5px;
+}
+
+.mob-menu__item {
+  width: 100%;
+  height: 1px;
+  background: rgba(40, 40, 40, 0.57);
+}
+
+.mob-menu__item:first-child {
+  margin-bottom: 7px;
+}
+
+@media (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+.slider-section {
+  overflow: hidden;
+  position: relative;
+  padding-top: 91px;
+  padding-bottom: 27px;
+}
+
+@media (min-width: 414px) {
+  .slider-section {
+    padding-top: 93px;
+    padding-bottom: 41px;
+  }
+}
+
+@media (min-width: 768px) {
+  .slider-section {
+    padding-top: 210px;
+    padding-bottom: 125px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider-section {
+    padding-top: 89px;
+    padding-bottom: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .slider-section {
+    padding-top: 74px;
+    padding-bottom: 0px;
+  }
+}
+
+.slider-content {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1024px) {
+  .slider-content {
+    width: 850px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .slider-content {
+    width: 1200px;
+  }
+}
+
+.slider-img-wrap {
+  -webkit-transform: rotate(1.5deg);
+          transform: rotate(1.5deg);
+  margin: 0 auto;
+  width: 249.67px;
+}
+
+@media (min-width: 414px) {
+  .slider-img-wrap {
+    width: 273px;
+  }
+}
+
+@media (min-width: 768px) {
+  .slider-img-wrap {
+    width: 359px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider-img-wrap {
+    width: 359px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .slider-img-wrap {
+    width: 476px;
+  }
+}
+
+.slider-img {
+  opacity: 0;
+}
+
+.slider-img__image {
+  width: 249.67px;
+  height: 368.56px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 414px) {
+  .slider-img__image {
+    width: 273px;
+    height: 403px;
+  }
+}
+
+@media (min-width: 768px) {
+  .slider-img__image {
+    width: 359px;
+    height: 530px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider-img__image {
+    width: 359px;
+    height: 530px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .slider-img__image {
+    width: 476px;
+    height: 702px;
+  }
+}
+
+.slider-text-wrap {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 200px;
+  width: 100%;
+  z-index: 30;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-text__slide {
+  text-align: center;
+  white-space: nowrap;
+  font-family: 'Schnyder';
+  font-size: 44px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #580300;
+  mix-blend-mode: darken;
+}
+
+@media (min-width: 414px) {
+  .slider-text__slide {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 768px) {
+  .slider-text__slide {
+    font-size: 96px;
+    letter-spacing: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider-text__slide {
+    font-size: 96px;
+    margin-top: -10px;
+    letter-spacing: 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .slider-text__slide {
+    font-size: 125.5px;
+    letter-spacing: 13px;
+  }
+}
+
+.vector {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  padding: 0 18px;
+  opacity: 0;
+}
+
+@media (min-width: 414px) {
+  .vector {
+    padding: 0 11px;
+  }
+}
+
+@media (min-width: 768px) {
+  .vector {
+    max-width: 628px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .vector {
+    max-width: 506px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .vector {
+    top: -27px;
+    -webkit-transform: translateX(-244px);
+            transform: translateX(-244px);
+    max-width: 608.38px;
+  }
+}
+
+.bg-text {
+  position: absolute;
+  font-family: 'Schnyder';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke: 1px #580300;
+  top: calc(50% + 3px);
+}
+
+@media (min-width: 768px) {
+  .bg-text {
+    font-size: 95px;
+    top: calc(50% + 4px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .bg-text {
+    top: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bg-text {
+    font-size: 125px;
+  }
+}
+
+.bg-text-left {
+  -webkit-transform: rotate(-1.5deg);
+          transform: rotate(-1.5deg);
+  left: 0;
+  -webkit-transform: translate(-213px, -50%) rotate(-1.5deg);
+          transform: translate(-213px, -50%) rotate(-1.5deg);
+}
+
+@media (min-width: 768px) {
+  .bg-text-left {
+    -webkit-transform: translate(-396px, -50%) rotate(-1.5deg);
+            transform: translate(-396px, -50%) rotate(-1.5deg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .bg-text-left {
+    -webkit-transform: translate(-411px, -50%) rotate(-1.5deg);
+            transform: translate(-411px, -50%) rotate(-1.5deg);
+  }
+}
+
+@media (min-width: 1440px) {
+  .bg-text-left {
+    -webkit-transform: translate(-548px, -50%) rotate(-1.5deg);
+            transform: translate(-548px, -50%) rotate(-1.5deg);
+  }
+}
+
+.bg-text-right {
+  right: 0;
+  -webkit-transform: translate(220px, -50%) rotate(1.5deg);
+          transform: translate(220px, -50%) rotate(1.5deg);
+}
+
+@media (min-width: 768px) {
+  .bg-text-right {
+    -webkit-transform: translate(416px, -50%) rotate(1.5deg);
+            transform: translate(416px, -50%) rotate(1.5deg);
+  }
+}
+
+@media (min-width: 1440px) {
+  .bg-text-right {
+    -webkit-transform: translate(544px, -50%) rotate(1.5deg);
+            transform: translate(544px, -50%) rotate(1.5deg);
+  }
+}
+
+.left-img,
+.right-img {
+  position: absolute;
+  display: none;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  opacity: 0;
+  z-index: 20;
+}
+
+@media (min-width: 768px) {
+  .left-img,
+  .right-img {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .left-img {
+    left: calc(50% - 350px);
+    top: 109px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .left-img {
+    left: calc(50% - 494px);
+    top: 125px;
+  }
+}
+
+.left-img__image {
+  width: 163px;
+  height: 226px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transform: rotate(1.1deg);
+          transform: rotate(1.1deg);
+}
+
+@media (min-width: 1440px) {
+  .left-img__image {
+    width: 238px;
+    height: 331px;
+  }
+}
+
+@media (min-width: 768px) {
+  .right-img {
+    left: calc(50% + 130px);
+    top: 327px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .right-img {
+    left: calc(50% + 167px);
+    top: 421px;
+  }
+}
+
+.right-img__image {
+  width: 234px;
+  height: 162px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transform: rotate(2.03deg);
+          transform: rotate(2.03deg);
+}
+
+@media (min-width: 1440px) {
+  .right-img__image {
+    width: 345px;
+    height: 238px;
+  }
+}
+
+.footer-content {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 414px) {
+  .footer-content {
+    padding-top: 43px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    padding-top: 42px;
+    padding-bottom: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-content {
+    padding-top: 23px;
+    padding-bottom: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer-content {
+    padding-top: 13px;
+    padding-bottom: 47px;
+  }
+}
+
+.soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -4px;
+}
+
+.soc__item {
+  padding: 0 4px;
+  font-family: 'TT Travels';
+  font-size: 12px;
+}
+
+@media (min-width: 1440px) {
+  .soc__item {
+    font-size: 11px;
+  }
+}
+
+.cursor-text {
+  position: fixed;
+  z-index: 100;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.cursor-text_visible {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.anime {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */
