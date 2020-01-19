@@ -1,0 +1,420 @@
+@import 'vars';
+@import 'fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $main-font-color;
+}
+
+body {
+    background: url(../img/bg.jpg) no-repeat center top/cover;
+    overflow-x: hidden;
+}
+
+.container {
+    width: $container-w-l;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.products {
+    color: $main-font-color;
+
+    &-content {
+        padding-top: 97px;
+        padding-bottom: 130px;
+    }
+
+    &-title {
+        font-family: 'Evogria';
+        font-size: 48px;
+        text-align: center;
+        color: $main-font-color;
+        letter-spacing: normal;
+        padding-bottom: 81px;
+    }
+}
+
+.products {
+    &-box {
+        display: flex;
+        margin: 0 -15px;
+        position: relative;
+    }
+
+    &-item {
+        flex: 0 0 25%;
+        max-width: 25%;
+        width: 100%;
+        padding: 0 15px;
+        margin-bottom: 20px;
+    }
+}
+
+.img {
+    position: absolute;
+    top: 345px;
+    left: 15px;
+}
+
+.product {
+    font-family: "Bebas Neue";
+    padding: 0 7px;
+
+    &__inner {
+        background: linear-gradient(transparent 30%, rgba(0, 0, 0, 0.1));
+        padding: 0 20px 41px;
+    }
+
+    &__name {
+        text-align: center;
+        height: 43px;
+        overflow: hidden;
+        margin-bottom: 16px;
+    }
+
+    &__name-link {
+        font-size: 36px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__lable {
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 303px;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    &__img-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__img-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
+        object-position: center;
+    }
+}
+
+.price {
+    padding-left: 30px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+
+    &__new {
+        font-size: 60px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 0.9;
+    }
+
+    &__old {
+        font-size: 24px;
+        font-weight: 400;
+        text-decoration: line-through;
+        text-transform: uppercase;
+        padding-left: 6px;
+    }
+}
+
+.buy-block {
+    display: flex;
+    align-items: center;
+
+}
+
+.button {
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 23px;
+    border: 3px solid #fff;
+    padding: 10px 19px;
+    transition: background 0.5s, border 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        background: #ff8b24;
+        border: 3px solid #ff8b24;
+        transition: background 0.5, border 0.5s;
+    }
+}
+
+.quantity {
+    padding-left: 35px;
+    width: 122px;
+    display: flex;
+    position: relative;
+
+    &__selected {
+        width: 61px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        border-bottom: 3px solid #fff;
+        cursor: pointer;
+    }
+
+    &__number {
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        width: 50%;
+        padding-right: 7px;
+        text-align: right;
+    }
+
+    &__arrow {
+        padding-left: 7px;
+        width: 50%;
+        flex: 0 0 50%;
+
+    }
+}
+
+.list {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 187px;
+    // padding: 16px 14px 0;
+    overflow-y: auto;
+    left: 0;
+    top: 42px;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 50;
+
+    &__container {
+         padding: 16px 14px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 39px;
+        height: 35px;
+        transition: background 0.5s;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        border-radius: 5px;
+        margin-bottom: 9px;
+        cursor: pointer;
+
+    }
+
+    &__item:hover {
+        background: rgba(0, 0, 0, 0.2);
+        transition: background 0.5s;
+    }
+}
+
+// popup
+.popup {
+    width: 470px;
+    right: -470px;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 2000;
+    background-color: $main-font-color;
+
+    &-container {
+        padding-left: 55px;
+        padding-right: 67px;
+    }
+
+    &-title {
+        display: flex;
+        align-items: center;
+        color: $main-font-color;
+        padding-top: 81px;
+        padding-bottom: 73px;
+        background-color: rgba(255, 114, 0, 0.76);
+    }
+
+    &-title__text {
+        color: $main-font-color;
+        font-family: "Bebas Neue";
+        font-size: 60px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-left: 78px;
+    }
+
+    &-products {
+        margin-bottom: 40px;
+    }
+
+    &-content {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        padding-top: 4px;
+        padding-bottom: 26px;
+    }
+}
+
+.popup-product {
+    color: $popup-font-color;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: flex;
+    padding-top: 33px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+    &__img {
+        width: 72px;
+        height: 115px;
+        margin-right: 28px;
+    }
+
+    &__img-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__img-image {
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
+        object-position: center;
+    }
+
+    &__brand-link {
+        color: $popup-font-color;
+    }
+
+    &__name-link {
+        color: $popup-font-color;
+    }
+
+    &__name {
+        margin-bottom: 11px;
+    }
+
+    &__qta {
+        margin-bottom: 4px;
+        font-size: 24px;
+    }
+
+    &__price {
+        font-weight: 800;
+        font-size: 24px;
+    }
+}
+
+.popup-sum {
+    color: $popup-font-color;
+    font-family: 'Gilroy';
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    &__title {
+        line-height: 0.9;
+    }
+    &__price {
+        font-size: 48px;
+    }
+}
+
+.popup-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    &__button {
+        border-radius: 5px;
+        background: #faa21b;
+        padding: 22px 54px;
+        border: none;
+        color: $main-font-color;
+        font-family: "Gilroy";
+        font-size: 18px;
+        font-weight: 800;
+        text-transform: uppercase;
+        transition: background 0.5s;
+        cursor: pointer;
+    }
+
+    &__button:hover {
+        background: #323232;
+        transition: background 0.5s;
+    }
+}
+
+
+// overlay
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.77);
+    z-index: 1000;
+    display: none;
+}
+
+// style-scrollbar -webkit
+// .style-scrollbar::-webkit-scrollbar-track {
+//     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+//     background-color: transparent;
+// }
+
+// .style-scrollbar::-webkit-scrollbar {
+//     width: 6px;
+//     background-color: transparent;
+// }
+
+// .style-scrollbar::-webkit-scrollbar-thumb {
+//     background-color: rgba(0, 0, 0, 0.1);
+// }
+
+// style-scrollbar
+.mCSB_scrollTools {
+    width: 6px;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+    width: 4px;
+    background-color: rgba(0,0,0, 0.1);
+    border-radius: 0;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+}
+.mCSB_inside>.mCSB_container {
+    margin-right: 0; 
+}

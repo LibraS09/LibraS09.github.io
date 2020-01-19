@@ -1,0 +1,102 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width,initial-scale=1')
+        meta(http-equiv='X-UA-Compatible' content='ie=edge')
+        title Document
+        link(rel='stylesheet' href='css/jquery.mCustomScrollbar.min.css')
+        link(rel='stylesheet' href='css/main.css')
+    body
+        section.products
+            .container
+                .products-content
+                    h2.products-title CASSA
+                    .products-box
+                        img.img(src='img/doska2.png' alt='doska')
+                        - 
+                            var productItems = [
+                                {name: "PINEAPPLE", img : "img/product1.png"},
+                                {name: "berries", img : "img/product2.png"},
+                                {name: "grapefruit", img : "img/product3.png"},
+                                {name: "APPLE", img : "img/product4.png"}
+                            ]
+                        each productItem in productItems
+                            .products-item
+                                .product
+                                    .product__inner
+                                        h3.product__name
+                                            a.product__name-link(href='#')= productItem.name
+                                        .product__img
+                                            a.product__img-link(href='#')
+                                                img.product__img-image(src= productItem.img alt='PINEAPPLE')
+                                        .product__lable OFFERTA LIMITATA -50%  
+                                        .price
+                                            .price__new
+                                                span $
+                                                span 8.50 
+                                            .price__old
+                                                span 19.00
+                                                span $
+                                        .buy-block
+                                            .quantity
+                                                .quantity__selected
+                                                    .quantity__number 3
+                                                    .quantity__arrow
+                                                        img(src='img/arrow.png' alt='arrow')
+                                                .list.style-scrollbar
+                                                    - var n = 1;
+                                                    ul.list__container      
+                                                        while n <= 50
+                                                            li.list__item= n++
+                                            button.button(type='button')
+                                                img.button-img(src='img/buy.png' alt='buy')  
+        section.popup.style-scrollbar
+            .popup-container.popup-title
+                .popup-arrow
+                    img(src='img/arrow2.png' alt='arrow')
+                h2.popup-title__text Carello    
+            .popup-content
+                .popup-products
+                    .popup-container
+                        - 
+                            var popupProductItems = [
+                                {name: "Apple", img : "img/product4.png"},
+                                {name: "berries", img : "img/product2.png"},
+                                {name: "grapefruit", img : "img/product3.png"}
+                            ]
+                        each popupProductItem in popupProductItems
+                            .popup-product
+                                .popup-product__img
+                                    a.popup-product__img-link(href='#')
+                                        img.popup-product__img-image(src= popupProductItem.img alt='product')
+                                .popup-product__text
+                                    .popup-product__lable   offerta
+                                    .popup-product__brand
+                                        a.popup-product__brand-link(href='#') fizzyslim con sapore di
+                                    .popup-product__name
+                                        a.popup-product__name-link(href='#')= popupProductItem.name
+                                    .popup-product__qta QTÀ: 3
+                                    .popup-product__price
+                                        span €
+                                        span 25.50    
+                .popup-sum
+                    .popup-container
+                        .popup-sum__title  Subtotale
+                        .popup-sum__price 
+                            span €
+                            span 455.00
+            .popup-btn 
+                button.popup-btn__button(type='button') VISUALIZZA CARRELLO
+        .overlay
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+        script(src='js/jquery.mCustomScrollbar.concat.min.js')
+        script(src='js/script.js')
+
+
+
+
+                        
+
+
+
