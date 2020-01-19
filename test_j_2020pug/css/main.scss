@@ -209,7 +209,7 @@ body {
     z-index: 50;
 
     &__container {
-         padding: 16px 14px 0;
+        padding: 16px 14px 0;
         display: flex;
         flex-direction: column;
     }
@@ -291,6 +291,7 @@ body {
     padding-top: 33px;
     padding-bottom: 25px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    position: relative;
 
     &__img {
         width: 72px;
@@ -324,14 +325,44 @@ body {
     }
 
     &__qta {
+        width: 122px;
         margin-bottom: 4px;
         font-size: 24px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__qta-number {
+        padding-left: 6px;
+    }
+
+    &__qta-arrow {
+        position: absolute;
+        top: 0;
+        left: 90px;
     }
 
     &__price {
         font-weight: 800;
         font-size: 24px;
     }
+
+    &__delete {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: $popup-font-color;
+        cursor: pointer;
+    }
+
+    &__delete:hover {
+        color: #faa21b;
+    }
+}
+
+.popup__list {
+    background-color: #eee;
+    top: 28px;
 }
 
 .popup-sum {
@@ -340,9 +371,11 @@ body {
     font-size: 30px;
     font-weight: 300;
     text-transform: uppercase;
+
     &__title {
         line-height: 0.9;
     }
+
     &__price {
         font-size: 48px;
     }
@@ -374,7 +407,6 @@ body {
     }
 }
 
-
 // overlay
 .overlay {
     position: fixed;
@@ -388,33 +420,36 @@ body {
 }
 
 // style-scrollbar -webkit
-// .style-scrollbar::-webkit-scrollbar-track {
-//     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-//     background-color: transparent;
-// }
+.style-scrollbar-wk::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+}
 
-// .style-scrollbar::-webkit-scrollbar {
-//     width: 6px;
-//     background-color: transparent;
-// }
+.style-scrollbar-wk::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
 
-// .style-scrollbar::-webkit-scrollbar-thumb {
-//     background-color: rgba(0, 0, 0, 0.1);
-// }
+.style-scrollbar-wk::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+}
 
 // style-scrollbar
 .mCSB_scrollTools {
     width: 6px;
 }
+
 .mCSB_scrollTools .mCSB_draggerRail {
     width: 4px;
-    background-color: rgba(0,0,0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 0;
 }
+
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 0;
 }
+
 .mCSB_inside>.mCSB_container {
-    margin-right: 0; 
+    margin-right: 0;
 }

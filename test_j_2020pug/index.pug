@@ -5,6 +5,7 @@ html
         meta(name='viewport' content='width=device-width,initial-scale=1')
         meta(http-equiv='X-UA-Compatible' content='ie=edge')
         title Document
+        link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
         link(rel='stylesheet' href='css/jquery.mCustomScrollbar.min.css')
         link(rel='stylesheet' href='css/main.css')
     body
@@ -16,10 +17,10 @@ html
                         img.img(src='img/doska2.png' alt='doska')
                         - 
                             var productItems = [
-                                {name: "PINEAPPLE", img : "img/product1.png"},
-                                {name: "berries", img : "img/product2.png"},
-                                {name: "grapefruit", img : "img/product3.png"},
-                                {name: "APPLE", img : "img/product4.png"}
+                                {name: "PINEAPPLE", img : "img/product1.png", price_new: "8.50", price_old: "19.00"},
+                                {name: "berries", img : "img/product2.png", price_new: "8.50", price_old: "19.00"},
+                                {name: "grapefruit", img : "img/product3.png", price_new: "8.50", price_old: "19.00"},
+                                {name: "APPLE", img : "img/product4.png", price_new: "8.50", price_old: "19.00"}
                             ]
                         each productItem in productItems
                             .products-item
@@ -34,9 +35,9 @@ html
                                         .price
                                             .price__new
                                                 span $
-                                                span 8.50 
+                                                span.price__new-number= productItem.price_new
                                             .price__old
-                                                span 19.00
+                                                span.price__old-number= productItem.price_old
                                                 span $
                                         .buy-block
                                             .quantity
@@ -44,11 +45,11 @@ html
                                                     .quantity__number 3
                                                     .quantity__arrow
                                                         img(src='img/arrow.png' alt='arrow')
-                                                .list.style-scrollbar
+                                                .list.product__list.style-scrollbar
                                                     - var n = 1;
                                                     ul.list__container      
                                                         while n <= 50
-                                                            li.list__item= n++
+                                                            li.list__item.product__list-item= n++
                                             button.button(type='button')
                                                 img.button-img(src='img/buy.png' alt='buy')  
         section.popup.style-scrollbar
@@ -59,33 +60,37 @@ html
             .popup-content
                 .popup-products
                     .popup-container
-                        - 
-                            var popupProductItems = [
-                                {name: "Apple", img : "img/product4.png"},
-                                {name: "berries", img : "img/product2.png"},
-                                {name: "grapefruit", img : "img/product3.png"}
-                            ]
-                        each popupProductItem in popupProductItems
-                            .popup-product
+                        template#template
+                            .popup-product(data-price= "0")
+                                i.material-icons.popup-product__delete close
                                 .popup-product__img
                                     a.popup-product__img-link(href='#')
-                                        img.popup-product__img-image(src= popupProductItem.img alt='product')
+                                        img.popup-product__img-image(src= "" alt='product')
                                 .popup-product__text
                                     .popup-product__lable   offerta
                                     .popup-product__brand
                                         a.popup-product__brand-link(href='#') fizzyslim con sapore di
                                     .popup-product__name
-                                        a.popup-product__name-link(href='#')= popupProductItem.name
-                                    .popup-product__qta QTÀ: 3
+                                        a.popup-product__name-link(href='#')
+                                    .popup-product__qta 
+                                        span QTÀ:
+                                        span.popup-product__qta-number 3 
+                                        i.popup-product__qta-arrow.material-icons arrow_drop_down
+                                        .list.popup__list.style-scrollbar-wk
+                                            - var n = 1;
+                                            ul.list__container      
+                                                while n <= 50
+                                                    li.list__item.popup__list-item= n++
                                     .popup-product__price
                                         span €
-                                        span 25.50    
+                                        span.popup-product__price-number 25.50 
+                           
                 .popup-sum
                     .popup-container
                         .popup-sum__title  Subtotale
                         .popup-sum__price 
                             span €
-                            span 455.00
+                            span.popup-sum__price-number 455.00
             .popup-btn 
                 button.popup-btn__button(type='button') VISUALIZZA CARRELLO
         .overlay
