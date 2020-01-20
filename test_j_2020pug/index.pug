@@ -17,14 +17,14 @@ html
                         img.img(src='img/doska2.png' alt='doska')
                         - 
                             var productItems = [
-                                {name: "PINEAPPLE", img : "img/product1.png", price_new: "8.50", price_old: "19.00"},
-                                {name: "berries", img : "img/product2.png", price_new: "8.50", price_old: "19.00"},
-                                {name: "grapefruit", img : "img/product3.png", price_new: "8.50", price_old: "19.00"},
-                                {name: "APPLE", img : "img/product4.png", price_new: "8.50", price_old: "19.00"}
+                                {id: "1", name: "PINEAPPLE", img : "img/product1.png", price_new: "8.50", price_old: "19.00"},
+                                {id: "2", name: "berries", img : "img/product2.png", price_new: "8.50", price_old: "19.00"},
+                                {id: "3", name: "grapefruit", img : "img/product3.png", price_new: "8.50", price_old: "19.00"},
+                                {id: "4", name: "APPLE", img : "img/product4.png", price_new: "8.50", price_old: "19.00"}
                             ]
                         each productItem in productItems
                             .products-item
-                                .product
+                                .product(data-id= productItem.id)
                                     .product__inner
                                         h3.product__name
                                             a.product__name-link(href='#')= productItem.name
@@ -61,7 +61,7 @@ html
                 .popup-products
                     .popup-container
                         template#template
-                            .popup-product(data-price= "0")
+                            .popup-product(data-price= "0" data-id= "0")
                                 i.material-icons.popup-product__delete close
                                 .popup-product__img
                                     a.popup-product__img-link(href='#')

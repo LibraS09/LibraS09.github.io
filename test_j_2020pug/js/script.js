@@ -12,7 +12,37 @@ $(function () {
         }, 500);
 
         // product add card
+
         let product = $(this).closest('.product');
+        let id = $(product).data('id');
+        let quantity = $(product).find('.quantity__number').text();
+
+        let popup_product = $('.popup-product')
+        if ($(popup_product).length != 0) {
+            let f = 0;
+            $('.popup-product').each(function(indx, element){
+                if ($(element).data('id') == id) {   
+                    let qta_n = $(element).find('.popup-product__qta-number');
+                    let price = $(element).data('price');
+                    let qta_n_val = $(qta_n).text();
+
+                    let quantity_sum = +qta_n_val + +quantity;
+                    $(qta_n).text( quantity_sum );
+                    $(element).find('.popup-product__price-number').text(+price * quantity_sum);
+                    sum();
+                    f = 1;
+                } 
+              });   
+               if (f == 0) {
+                productAddCard(product);
+               }
+        } else {
+            productAddCard(product);
+        }
+    });
+
+    function productAddCard(product) {
+        let id = $(product).data('id');
         let name = $(product).find('.product__name-link').text();
         let img = $(product).find('.product__img-image').attr("src");
         let price = $(product).find('.price__new-number').text();
@@ -25,11 +55,12 @@ $(function () {
         clone.querySelector('.popup-product__qta-number').textContent = quantity;
         clone.querySelector('.popup-product__img-image').setAttribute("src", img);
         clone.querySelector('.popup-product').dataset.price = price;
+        clone.querySelector('.popup-product').dataset.id = id;
         clone.querySelector('.popup-product__price-number').textContent = +price * +quantity;
 
         document.querySelector('.popup-products .popup-container').appendChild(clone);
         sum();
-    });
+    }
 
     $('.popup-title, .overlay').on('click', function () {
         // popup close
